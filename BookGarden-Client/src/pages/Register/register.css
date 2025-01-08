@@ -1,0 +1,192 @@
+/* Tổng quan */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Wrapper chính */
+/* Nền ngoài form */
+#wrapper {
+  width: 100%;
+  height: 100vh; /* Chiều cao toàn màn hình */
+  background: url("https://cdn.tgdd.vn/hoi-dap/1369909/200-anh-lam-slide-powerpoint-cuc-dep-chuyen-nghiep-khong%2012%20(4)-800x500.jpg")
+    no-repeat center center fixed; /* Thay URL bằng ảnh của bạn */
+  background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ màn hình */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hộp đăng ký */
+#dialog {
+  max-width: 450px;
+  width: 100%;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.9); /* Nền trắng mờ */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+#dialog:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Hộp đăng ký */
+
+/* Text */
+.text {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.button {
+  border: none;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: #0072ff;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056c8;
+}
+
+/* Hình ảnh */
+.image {
+  width: 200px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+/* Form */
+.loginform {
+  max-width: 500px;
+}
+
+.ant-form-item-label > label {
+  font-weight: bold;
+  color: #333;
+}
+
+.ant-input-affix-wrapper {
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+/* Nút Đăng ký */
+.loginformbutton {
+  width: 100%;
+  background-color: #0072ff;
+  border: none;
+  height: 48px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.loginformbutton:hover {
+  background-color: #0056c8;
+}
+
+/* Liên kết dưới form */
+.link-login {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+
+.link-login .link {
+  color: #0072ff;
+  text-decoration: none;
+}
+
+.link-login .link:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+/* Trang đăng ký */
+.register-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.register-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.register-card {
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.register-title {
+  text-align: center;
+  color: #0072ff;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.register-description {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-login-link {
+  color: #0072ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #dialog {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .register-container {
+    padding: 15px;
+  }
+
+  .register-title {
+    font-size: 20px;
+  }
+}

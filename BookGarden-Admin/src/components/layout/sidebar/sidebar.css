@@ -1,0 +1,38 @@
+.image {
+  width: 100%;
+  height: 150;
+}
+
+.ant-collapse-content {
+  background: palegreen;
+}
+
+.ant-menu-item-selected {
+  box-shadow: 0 0 10px 1px rgba(66, 135, 245, 0.7); /* Màu xanh dương nhạt với độ trong suốt */
+  background: linear-gradient(
+    to right,
+    rgba(66, 135, 245, 1),
+    /* Xanh dương */ rgba(91, 207, 246, 1) /* Xanh cyan */
+  );
+  color: white;
+}
+
+.ant-menu :hover {
+  color: inherit;
+}
+
+.ant-menu {
+  background-color: white;
+}
+
+/* .ant-menu-item ::after{
+border-right: 3px solid #FFFFFF;
+} */
+
+.customeClass .ant-menu-title-content {
+  text-align: left;
+}
+
+.ant-menu-light .ant-menu-item-selected {
+  color: white;
+}

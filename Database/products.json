@@ -1,0 +1,695 @@
+[
+  {
+    "_id": {
+      "$oid": "65fd6de3207e1639f49dc1c0"
+    },
+    "name": "Doraemon Hoạt Hình Màu - Tập 1 (Tái Bản 2020)",
+    "price": 130000,
+    "quantity": 12,
+    "description": "<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"box-sizing: border-box; font-size: small;\"><span style=\"box-sizing: border-box; font-family: Verdana;\">Trọn bộ 2 tập<br style=\"box-sizing: border-box;\"><br style=\"box-sizing: border-box;\">Tuyển tập những truyện ngắn đặc sắc nhất được dựng thành phim hoạt hình.</span></span></p><p style=\"box-sizing: border-box; margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><br></p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1729358328347-doraemon-hoat-hinh-mau-tap-1_14542_12609.jpg",
+    "category": {
+      "$oid": "65fd6822207e1639f49dc01a"
+    },
+    "url_book": "http://localhost:3100/uploads\\1711107665864-33f8208cf0ee43e78589621f7d6b6ab5.jpg",
+    "createdAt": {
+      "$date": "2024-10-19T11:39:15.209Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-07T19:43:46.008Z"
+    },
+    "__v": 0,
+    "status": "Unavailable",
+    "form": "Bìa cứng",
+    "pages": 150,
+    "pulisher": {
+      "$oid": "6713e675681bb48074434df0"
+    },
+    "size": "13x19cm",
+    "weight": 300,
+    "year": 2004,
+    "author": {
+      "$oid": "6713ea73681bb48074434e5b"
+    },
+    "salePrice": 50000,
+    "stock": 6
+  },
+  {
+    "_id": {
+      "$oid": "65fd6f33207e1639f49dc1d3"
+    },
+    "name": "Thám Tử Lừng Danh Conan - Ngôi Sao 5 Cánh 1 Triệu Đô",
+    "price": 80000,
+    "quantity": 89,
+    "description": "<div><span style=\"font-size: 18px;\">“Thành công là một hành trình, không phải là một điểm đến”. -- David Niven, Ph. D.</span></div><div><span style=\"font-size: 18px;\"><br></span></div><div><span style=\"font-size: 18px;\">“Không có gì vĩ đại đạt được mà thiếu sự tâm huyết.” -- Ralph Waldo Emerson</span></div><div><span style=\"font-size: 18px;\"><br></span></div><div><span style=\"font-size: 18px;\">Cuốn sách đã chỉ ra rằng trong cuộc sống, ai cũng mong muốn có được thành công. Và để đạt được ước mơ đó, mỗi người phải nỗ lực học tập, rèn luyện và làm việc, cũng như phải suy nghĩ, trăn trở để lựa chọn hướng đi đến thành công. Và thành công không phải là một may mắn hay số phận mà thành công là sự cố gắng của cả một quá trình và chúng ta phải vượt qua rất nhiều khó khăn và thử thách để đạt được.</span></div><div><span style=\"font-size: 18px;\"><br></span></div><div><span style=\"font-size: 18px;\">Bí quyết của thành công không phải là những gì xa lạ và khó thực hiện, đòi hỏi phải rèn luyện công phu trong nhiều năm trời mới có được. Cuốn sách không đưa ra những điều cao siêu hay đặt ra những mục tiêu lớn lao vượt khỏi khả năng của mỗi người. Mà chỉ đơn giản là những thái độ sống, những suy nghĩ tích cực, những điều khuyên thực tế mà bạn có thể áp dụng ngay vào lúc này – bất kể hoàn cảnh và tình trạng hiện có của bạn.​</span><br></div>",
+    "image": "http://localhost:3100/uploads\\1728296047937-tham-tu-lung-danh-conan-tieu-thuyet-ngoi-sao-5-canh-1-trieu-do_133956_1.jpg",
+    "category": {
+      "$oid": "65fd6822207e1639f49dc01a"
+    },
+    "url_book": "",
+    "createdAt": {
+      "$date": "2024-10-19T11:44:51.537Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-07T18:47:40.772Z"
+    },
+    "__v": 1,
+    "status": "Available",
+    "form": "Bìa cứng",
+    "pages": 200,
+    "pulisher": {
+      "$oid": "6712805ffcdda7ce5a28f87b"
+    },
+    "size": "13x19cm",
+    "weight": 300,
+    "year": 2022,
+    "author": {
+      "$oid": "6713eae2681bb48074434e82"
+    },
+    "salePrice": 50000,
+    "stock": 8
+  },
+  {
+    "_id": {
+      "$oid": "65fd6fe1207e1639f49dc1e0"
+    },
+    "name": "Shin - cậu bé bút chì - Hoạt hình màu - Tập 15",
+    "price": 60000,
+    "quantity": 99,
+    "description": "<div><span style=\"font-size: 18px;\"><span style=\"font-family: Verdana;\"><strong>BookGarden mời bạn đón đọc.</strong></span></span><br><br></div>",
+    "image": "http://localhost:3100/uploads\\1733600784354-shin-cau-be-but-chi-hoat-hinh-mau-tap-15_27106_1.jpg",
+    "category": {
+      "$oid": "65fd6822207e1639f49dc01a"
+    },
+    "createdAt": {
+      "$date": "2024-10-19T11:47:45.355Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-07T19:46:24.431Z"
+    },
+    "__v": 1,
+    "status": "Available",
+    "form": "Bìa cứng",
+    "pages": 320,
+    "pulisher": {
+      "$oid": "6712805ffcdda7ce5a28f87b"
+    },
+    "size": "13x19cm",
+    "weight": 300,
+    "year": 2012,
+    "author": {
+      "$oid": "6713eae2681bb48074434e82"
+    },
+    "salePrice": 20000,
+    "stock": 3,
+    "slide": []
+  },
+  {
+    "_id": {
+      "$oid": "65fd7074207e1639f49dc1e6"
+    },
+    "name": "Bí Mật Của Trăng",
+    "price": 150000,
+    "quantity": 100,
+    "description": "<p style=\"box-sizing: border-box; margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: center;\"><span style=\"box-sizing: border-box; color: rgb(255, 0, 0);\"><span style=\"box-sizing: border-box; font-size: 28px;\"><strong><span style=\"box-sizing: border-box; line-height: 2em; font-family: verdana, geneva, sans-serif;\">&nbsp;</span>Bí Mật Của Trăng</strong></span></span></p><p style=\"box-sizing: border-box; margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"><span style=\"box-sizing: border-box; line-height: 2em; font-family: verdana, geneva, sans-serif; font-size: 14px;\">&nbsp;</span></p><p style=\"box-sizing: border-box; margin: 0px 0px 1rem; padding: 0px; text-align: justify;\"><span style=\"box-sizing: border-box; font-family: verdana, geneva, sans-serif;\"><span style=\"box-sizing: border-box; font-size: 14px;\"><span style=\"box-sizing: border-box; line-height: 2.5em;\"><span style=\"box-sizing: border-box; font-weight: bolder;\">BỘ THƠ &amp; TRANH TÔ MÀU SONG NGỮ NÀY LÀ MÓN QUÀ TUYỆT VỜI DÀNH CHO CÁC BẠN NHỎ!!!</span></span></span></span></p><p style=\"box-sizing: border-box; margin: 0px 0px 1rem; padding: 0px; text-align: justify;\"><span style=\"box-sizing: border-box; font-family: verdana, geneva, sans-serif;\"><span style=\"box-sizing: border-box; font-size: 14px;\"><span style=\"box-sizing: border-box; line-height: 2.5em;\">Bộ sách được thiết kế nhằm giúp các bạn nhỏ phát triển tư duy ngôn ngữ, tư duy hình ảnh và trí tuệ cảm xúc!</span></span></span></p><p style=\"box-sizing: border-box; margin: 0px 0px 1rem; padding: 0px; text-align: justify;\"><span style=\"box-sizing: border-box; font-family: verdana, geneva, sans-serif;\"><span style=\"box-sizing: border-box; font-size: 14px;\"><span style=\"box-sizing: border-box; line-height: 2.5em;\">Bạn có thể tìm thấy trong cuốn sách này:</span></span></span></p><ul style=\"box-sizing: border-box; margin: 0px 0px 1rem; padding: 0px; list-style: inherit;\"><li style=\"box-sizing: border-box; margin: 0px; padding: 0px; list-style-type: none; display: list-item; text-align: justify;\"><span style=\"box-sizing: border-box; font-family: verdana, geneva, sans-serif;\"><span style=\"box-sizing: border-box; font-size: 14px;\"><span style=\"box-sizing: border-box; line-height: 2.5em;\">Những câu chuyện thú vị được thể hiện bằng những bài thơ</span></span></span></li><li style=\"box-sizing: border-box; margin: 0px; padding: 0px; list-style-type: none; display: list-item; text-align: justify;\"><span style=\"box-sizing: border-box; font-family: verdana, geneva, sans-serif;\"><span style=\"box-sizing: border-box; font-size: 14px;\"><span style=\"box-sizing: border-box; line-height: 2.5em;\">Những bức tranh tô màu cho bé thỏa thuê tí toáy</span></span></span></li><li style=\"box-sizing: border-box; margin: 0px; padding: 0px; list-style-type: none; display: list-item; text-align: justify;\"><span style=\"box-sizing: border-box; font-family: verdana, geneva, sans-serif;\"><span style=\"box-sizing: border-box; font-size: 14px;\"><span style=\"box-sizing: border-box; line-height: 2.5em;\">Những từ ngữ phong phú được trình bày dưới dạng song ngữ Anh - Việt</span></span></span></li></ul><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1728308937349-bi-mat-cua-trang_134478_1.jpg",
+
+    "category": {
+      "$oid": "65fd6755207e1639f49dbfe4"
+    },
+    "url_book": "http://localhost:3100/uploads\\1711108169966-0f980a3ca32f4ee28c5d5004edca158c.jpg",
+    "createdAt": {
+      "$date": "2024-10-19T11:50:12.201Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-02T15:14:41.370Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "form": "Bìa cứng",
+    "pages": 250,
+    "pulisher": {
+      "$oid": "6713ec8b681bb48074434ea6"
+    },
+    "size": "13x19cm",
+    "weight": 350,
+    "year": 2007,
+    "author": {
+      "$oid": "6713ec7d681bb48074434ea0"
+    },
+    "salePrice": 80000,
+    "stock": 8
+  },
+  {
+    "_id": {
+      "$oid": "65fd733e207e1639f49dc21a"
+    },
+    "name": "Đêm Trước - Cha và Con",
+    "price": 140000,
+    "quantity": 100,
+    "description": "<div><span style=\"font-size: 18px;\">Hai tiểu thuyết nổi tiếng của nhà văn Nga Ivan Turgenev có chung đề tài về cuộc sống của thanh niên Nga trong giai đoạn khủng hoảng về tư tưởng xã hội. Tác phẩm Đêm trước viết về tình yêu giữa Elena - người thiếu nữ Nga và Inxarov - một chàng trai Bungari. Họ có chung lí tưởng và cá tính mạnh mẽ, mong muốn thay đổi tình trạng trì trệ, tối tăm của xã hội. Nhưng, Inxarov đã chết trước khi anh kịp làm một điều gì đó cụ thể cho đất nước Bungari của anh và số phận Elena vẫn còn bỏ ngỏ. Cũng tương tự như vậy Bazarov trong Cha và con là một thanh niên thông minh, nhiệt tình và phủ nhận mọi đức tin cũng như những hành động đạo đức nửa vời. Với cá tính mãnh liệt, anh sẵn sàng tranh cãi và thậm chí đấu súng với những người mà anh cho là trưởng giả và lạc hậu. Tuy nhiên, chàng thanh niên theo chủ nghĩa hư vô đó cũng sớm lìa khỏi cuộc sống vì lây bệnh khi anh khám chữa cho những người nông dân.</span></div><div><span style=\"font-size: 18px;\">​</span></div>",
+    "image": "http://localhost:3100/uploads\\1728296765053-24733016.jpg",
+
+    "category": {
+      "$oid": "65fd67f2207e1639f49dc016"
+    },
+    "url_book": "",
+    "createdAt": {
+      "$date": "2024-10-22T12:02:06.264Z"
+    },
+    "updatedAt": {
+      "$date": "2024-11-25T11:33:50.783Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "form": "Bìa mềm",
+    "pages": 300,
+    "pulisher": {
+      "$oid": "6712805ffcdda7ce5a28f87b"
+    },
+    "size": "14,5x22",
+    "weight": 510,
+    "year": 2006,
+    "author": {
+      "$oid": "6713ed2c681bb48074434ed6"
+    },
+    "salePrice": 99999,
+    "stock": 0
+  },
+  {
+    "_id": {
+      "$oid": "65fd73c7207e1639f49dc220"
+    },
+    "name": "Những Kỳ Án Nổi Tiếng Chưa Có Lời Giải",
+    "price": 230000,
+    "quantity": 50,
+    "description": "<div><span style=\"font-size: 18px;\">\"Vườn Hoa Mạt Dược Ký Sự - Những Kỳ Án Nổi Tiếng Chưa Có Lời Giải\" là một cuốn sách trinh thám, tập hợp 15 vụ án nổi tiếng chưa có lời giải trên thế giới. Các vụ án được tác giả Hà Mạt Bì thu thập và phân tích một cách chi tiết, đầy đủ thông tin, từ diễn biến vụ án, những manh mối được tìm thấy, đến những giả thuyết được đưa ra.</span></div><div><span style=\"font-size: 18px;\"><br></span></div><div><span style=\"font-size: 18px;\">Cuốn sách mở đầu với vụ án \"Chiếc ghế điện ma ám\" xảy ra tại nhà tù Sing Sing, Mỹ. Vụ án này đã khiến cho chiếc ghế điện trở thành một nỗi ám ảnh kinh hoàng đối với các tử tù. Tiếp theo là vụ án \"Bóng ma nhà hát\" xảy ra tại nhà hát Grand Guignol, Pháp. Vụ án này đã khiến cho nhà hát này trở thành một nơi bị bỏ hoang, không ai dám bén mảng đến.</span><br></div>",
+    "image": "http://localhost:3100/uploads\\1728296950440-a91636480676453f90d2c4c565579825.jpg",
+
+    "category": {
+      "$oid": "65fd67f2207e1639f49dc016"
+    },
+    "url_book": "",
+    "createdAt": {
+      "$date": "2024-10-19T12:04:23.677Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-07T19:17:12.941Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "form": "Bìa mềm",
+    "pages": 400,
+    "pulisher": {
+      "$oid": "6713ede7681bb48074434efa"
+    },
+    "size": "20.5 x 14.5 cm",
+    "weight": 450,
+    "year": 2021,
+    "author": {
+      "$oid": "6713edca681bb48074434ef2"
+    },
+    "salePrice": 150000,
+    "stock": 10
+  },
+  {
+    "_id": {
+      "$oid": "65fd74fc207e1639f49dc226"
+    },
+    "name": "Mùa Tôm",
+    "price": 160000,
+    "quantity": 95,
+    "description": "<div><span style=\"font-size: 18px;\">Trong nền văn học Ấn Độ thế kỷ XX, các tác giả càng ngày càng muốn nắm bắt và thể hiện được cuộc sống trong dạng chân chất, nguyên khai của nó, không thỏa mãn với các miêu tả đầy lãng mạn và huyền bí, cũng như không chỉ thu hẹp vào thế giới tinh thần mang đậm màu sắc tôn giáo của con người, như trong những tác phẩm viết về Ấn Độ thế kỷ 19. Trong số các tác giả có nhiều cách tân, Thakagi Sivasankara Pillai là một ngòi bút có nhiều đóng góp xuất sắc. Ông sinh ngày 17/4/1912 tại làng Thakagi, bang Kerala, một trong những bang nghèo bậc nhất ở Ấn Độ nhưng lại có truyền thống lâu đời về văn hóa -- nền văn hóa Malayalam. Thiên nhiên ở miền nam Ấn Độ này hết sức khắc nghiệt, cộng với một bối cảnh xã hội còn chịu ảnh hưởng nặng nề của đời sống đẳng cấp đã khiến đời sống người dân nghèo luôn luôn đứng trước những xung đột, tai họa, bất công. Thakagi Pillai có ý thức rõ rệt muốn góp một tiếng nói, một cách nhìn xây dựng vào thực tế xã hội của quê hương mình. Từ bút pháp lãng mạn thời kỳ đầu, ông chuyển sang bút pháp hiện thực. Năm 1942, ông sáng lập Liên đoàn các nhà văn tiến bộ bang Kerala. Ngay những tác phẩm thời trẻ như Hoa mới nở (1934), Những câu chuyện Thakagi (1938), Pillai đã dũng cảm đứng về phía người nghèo, phê phán những bất công xã hội. Trong nhiều truyện dài của ông, nhân vật chính thường là những con người lao động, xuất thân từ những đẳng cấp thấp, luôn phải hứng chịu những thử thách khốc liệt của cuộc sống như trong Cái đầu lâu (1947), Con trai người quét rác (1948), Hai vốc cơm (1949). Nhưng với tiểu thuyết Mùa Tôm (1956), Pillai đã trở lại với bút pháp lãng mạn ban đầu của mình khi viết về tình yêu khác đẳng cấp và tín ngưỡng ở một vùng dân chài. Cuốn tiểu thuyết đã đem lại vinh quang cho Pillai, được giải thưởng của Viện hàn lâm văn học Ấn Độ do Tổng thống Ấn Độ trao tặng (năm 1957), Giải thưởng văn học cao nhất ở Ấn Độ. Trong Mùa tôm, cuộc sốngvới những vật lộn khắc nghiệt hàng ngày của người lao động tại một làng chài Ấn Độ hiện lên rất sáng rõ trong bối cảnh thiên nhiên nghiệt ngã, giữa những hàng rào vô hình mà tai ác, ngăn cách những con người ở những đẳng cấp xã hội và tín ngưỡng khác nhau và dẫn đến kết cục thật bi thảm. Cuốn sách từ khi ra đời đã được bàn cãi sôi nổi, tính đến năm 1965 đã được in đi in lại mười bốn lần và trở thành một sự kiện trong đời sống văn học Ấn Độ những năm 50-60. Đưa tác phẩm này của Pillai đến với bạn đọc Việt Nam, chúng tôi muốn giới thiệu một ngòi bút giàu lương tri, nhân ái. Suốt đời chiến đấu cho sự đổi mới và tiến bộ xã hội, dũng cảm bênh vực những khát vọng của con người ở dưới đáy xã hội, và luôn kêu gọi họ hợp lực lại đấu tranh cho một cuộc sống thật xứng đáng với con người.</span><br></div>",
+    "image": "http://localhost:3100/uploads\\1733600650934-290743-mua-tom.jpg",
+
+    "category": {
+      "$oid": "65fd67f2207e1639f49dc016"
+    },
+    "url_book": "",
+    "createdAt": {
+      "$date": "2024-10-22T12:09:32.229Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-07T19:44:11.033Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "form": "Bìa mềm",
+    "pages": 286,
+    "pulisher": {
+      "$oid": "6713ee87681bb48074434f1a"
+    },
+    "size": "20.5x13cm",
+    "weight": 450,
+    "year": 2015,
+    "author": {
+      "$oid": "6713ee72681bb48074434f14"
+    },
+    "salePrice": 120000,
+    "stock": 0
+  },
+  {
+    "_id": {
+      "$oid": "65fd777d207e1639f49dc26b"
+    },
+    "name": "Thiên Tài Và Sự Giáo Dục Từ Sớm",
+    "price": 250000,
+    "quantity": 98,
+    "description": "<div><span style=\"font-size: 18px;\">Nhiều năm trước đây thường xảy ra chuyện con cái của những gia đình giàu có bị bắt giữ vì những hành vi trái đạo. Khi ấy, những gia đình giàu có này sẽ tìm đến cánh nhà báo mà họ vẫn hay qua lại để phân bua: \"Tôi vì quá bận rộn với việc kinh doanh nên không để mắt đến con cái được. Nay xảy ra hậu quả thế này, tôi thật không còn mặt mũi nào nữa...\". Những lời nói như thế từng được đăng trên khắp các mặt báo.</span></div><div><span style=\"font-size: 18px;\"><br></span></div><div><span style=\"font-size: 18px;\">Nói rằng công việc kinh doanh bận rộn đến mức không có thời gian dành cho con cái chỉ là ngụy biện cho sự quá ham mê kiếm tiền của bản thân. Trên đời này chắc chắn có nhiều những người như thế và cuốn sách này viết ra hiển nhiên không phải để cho những người đó đọc.&nbsp;</span></div><div><span style=\"font-size: 18px;\"><br></span></div><div><span style=\"font-size: 18px;\">Cũng có những cô gái \"của thời đại mới\" mang trong mình suy nghĩ: \"Việc làm mẹ sẽ cản trở sự phát triển cá nhân, phá hỏng công việc cũng như làm đảo lộn sinh hoạt của bản thân\". Như thế, những người này ghét làm mẹ ít nhiều là vì điều đó ảnh hưởng đến thói ích kỷ của họ. Trên đời này có không ít những cô gái như thế, và đương nhiên, cuốn sách này được viết ra không dành cho họ.</span></div><div><span style=\"font-size: 18px;\"><br></span></div><div><span style=\"font-size: 18px;\">Nhưng vẫn còn những người, tuy biết rằng bản thân chỉ đạt đến đây thôi, nhưng ít nhất sẽ cố gắng làm cho con mình trở thành hoàn hảo. Họ hiểu rằng mình chỉ là nấc thang thứ nhất, con mình sẽ là nấc thứ hai, và những gì mình đã không thể làm được thì con cái sẽ tiếp tục giúp mình... Những con người đó, bất kể họ thành công hay thất bại, nhưng đối với xã hội, đối với nhân loại, họ vẫn là những thiên tài, là những con người ưu tú mà hàng ngàn vạn người mới có một.</span></div><div><span style=\"font-size: 18px;\"><br></span></div><div><span style=\"font-size: 18px;\">Cuốn sách này của tôi được viết ra với kỳ vọng dành cho những người như thế.​</span><br></div>",
+    "image": "http://localhost:3100/uploads\\1733600726482-20696754.jpg",
+
+    "category": {
+      "$oid": "65fd6755207e1639f49dbfe4"
+    },
+    "url_book": "http://localhost:3100/uploads\\1711109936844-2d6949ee78b24f22b2c12dec15df39c2.jpg",
+    "createdAt": {
+      "$date": "2024-10-22T12:20:13.873Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-07T19:45:26.566Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "form": "Bìa mềm",
+    "pages": 232,
+    "pulisher": {
+      "$oid": "6713ee87681bb48074434f1a"
+    },
+    "size": "13x20.5 cm",
+    "weight": 250,
+    "year": 2019,
+    "author": {
+      "$oid": "6713eedb681bb48074434f34"
+    },
+    "salePrice": 120000,
+    "stock": 26
+  },
+  {
+    "_id": {
+      "$oid": "670e6fc4fd485ceafdb61914"
+    },
+    "name": "Yêu Những Điều Không Hoàn Hảo",
+    "price": 139000,
+    "year": 2018,
+    "quantity": 24,
+    "weight": 300,
+    "size": "14 x 20.5cm",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-family: Arial;\"><strong>Yêu Những Điều Không Hoàn Hảo</strong></span></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-family: Arial;\">“Ngẫm lại cuộc sống của chính mình, ta sẽ nhận thấy rất nhiều điều không hoàn hảo. Trước hết, chỉ nhìn vào bản thân mình thôi ta đã cảm nhận được nhiều thiếu sót rồi: lời nói và hành động mâu thuẫn với nhau, vụng về trong những mối quan hệ xã hội, chuyện học hành, công việc không suôn sẻ như ý muốn. Chưa kể đôi khi ta còn khiến người khác tổn thương, thậm chí còn làm những việc khiến bản thân cảm thấy tội lỗi và hối hận. Và khi nhìn vào những người thân trong gia đình, bạn bè, đồng nghiệp, ta cũng nhận thấy những điều không-hoàn-hảo tương tự như vậy.</span></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-family: Arial;\">Nhưng dù đang sống giữa thế gian đầy rẫy những điều không hoàn hảo, ta vẫn không thể ngừng yêu thương chính những điều không hoàn hảo ấy. Cuộc sống rất đáng để trân trọng, ta không thể phí hoài cuộc sống vào việc mỉa mai hay căm ghét thứ gì đó chỉ vì không thể hiểu được nó hoặc nó không vừa ý ta.</span></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-family: Arial;\">Mong sao những dòng chữ nhỏ bé của tôi có thể đem đến cho độc giả dũng khí, giúp họ chữa lành vết thương lòng và dành ra cho riêng mình khoảng thời gian để yêu bản thân… Mong sao cuốn sách này sẽ trở thành bàn tay giữ lấy bạn khi bạn rơi vào tuyệt vọng, sẽ trở thành khoảng lặng để bạn tạm dừng chân giữa những hỗn độn ồn ào.”</span></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span style=\"font-family: Arial;\">― Đại đức Hae Min</span></p><div><span style=\"font-family: Arial;\">​</span></div>",
+    "image": "http://localhost:3100/uploads\\1733600747368-yeu_nhung_dieu_khong_hoan_hao_12_2018_09_12_11_14_40-247x296.jpg",
+    "slide": [],
+    "category": {
+      "$oid": "65fd67f2207e1639f49dc016"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-10-20T13:36:04.133Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-07T19:45:47.444Z"
+    },
+    "__v": 0,
+    "pages": 200,
+    "pulisher": {
+      "$oid": "6713ede7681bb48074434efa"
+    },
+    "author": {
+      "$oid": "6713ef45681bb48074434f4e"
+    },
+    "salePrice": 100000,
+    "stock": 0
+  },
+  {
+    "_id": {
+      "$oid": "6754a5140b43c3637566b931"
+    },
+    "name": "Giấc Mơ, Cảnh Tượng Và Cái Nhìn",
+    "price": 95000,
+    "salePrice": 73150,
+    "year": 2019,
+    "stock": 25,
+    "pages": 260,
+    "weight": 300,
+    "size": "13.5 x 20.5 x 1.2",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Huỳnh Như Phương là nhà nghiên cứu lý luận, phê bình gần như suốt đời dùng ngòi bút để đề cao, cổ vũ và dự phóng những giá trị của văn nghệ dân tộc. Tác phẩm<span>&nbsp;</span><em>Giấc mơ, Cảnh tượng và Cái nhìn</em><span>&nbsp;</span>một lần nữa cho thấy ông mải mê và quyết tâm đi theo con đường đó. Ông lặng lẽ đổ một cái bóng lớn đậm trong một hành trình dài không ngưng nghỉ.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Đông đảo bạn đọc báo chí quen nhìn thấy Huỳnh Như Phương như một nhà phê bình bám sát đời sống văn học, nhất là văn học ở Sài Gòn. Nhưng giữa dòng chảy đầy áp lực của báo chí, ông vẫn điềm tĩnh giữ được vị thế riêng của mình.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Tác phẩm<span>&nbsp;</span><em>Giấc mơ, Cảnh tượng và Cái nhìn</em><span>&nbsp;</span>cho thấy một phong cách khác, một diện mạo khác của Huỳnh Như Phương. Ông chọn đứng từ một khoảng cách xa hơn các đối tượng nghiên cứu, phê bình để vừa có thể nhận định, phê bình sâu sắc từ tác giả, dịch giả, tác phẩm, hoạt động xuất bản, báo chí, đến sự tiếp nhận ảnh hưởng từ nước ngoài, những hiện tượng, trào lưu văn học chính yếu, tác động của chính trị - xã hội, hoạt động phê bình, nghiên cứu, lý luận, giảng dạy…</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Cuốn sách được chia làm ba phần, như là ba thao tác, ba tâm thức ít nhiều khác biệt, nhưng đều có điểm chung là sự bao dung và tinh thần nhân văn chủ nghĩa. Bao dung để có một bức tranh lớn. Tinh thần nhân văn để biến mình thành một kẻ nhạy cảm đón lấy những cái đẹp và giá trị thuộc về cõi người ta.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Không phiêu lưu tiêu biến vào những chân trời vô tăm tích, ông ở lại đây với chúng ta, thỉnh thoảng lại cất lên một mẻ lưới để chia sẻ với mọi người, như một món quà của người bạn đường văn chương.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Thật khó để tát cạn tinh thần của cuốn sách phong phú này. Có thể dễ dàng thấy cái đẹp của văn phong khúc chiết, luận điểm mạch lạc trong từng bài viết; khó hơn một chút là nhìn ra tri thức sâu rộng và chủ nghĩa nhân văn như sợi dây xuyên suốt nối các bài viết. Thiết nghĩ, bạn đọc quan tâm và cả giới chuyên môn trong lĩnh vực nghiên cứu – lý luận – phê bình sẽ gặt hái được không ít từ tác phẩm này.</p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1733600532120-image_187604.webp",
+    "category": {
+      "$oid": "6754a5370b43c3637566b93d"
+    },
+    "author": {
+      "$oid": "6713e627681bb48074434dd1"
+    },
+    "pulisher": {
+      "$oid": "6713ee87681bb48074434f1a"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-12-07T19:42:12.245Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-07T19:43:29.075Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6761985ef0aa99d180b5ea80"
+    },
+    "name": "30 Giây Khoa Học - 30 Giây Khoa Học Dữ Liệu",
+    "price": 155000,
+    "salePrice": 139500,
+    "year": 2023,
+    "stock": 10,
+    "pages": 160,
+    "weight": 180,
+    "size": "23 x 18 x 0.8 ",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><strong>30 Giây Khoa Học - 30 Giây Khoa Học Dữ Liệu</strong></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Khoa học dữ liệu (Data science) là một hệ sinh thái nhân tạo mới trong kỉ nguyên thông tin hiện đại, bao gồm từ việc tìm ra tội phạm đến dự đoán dịch bệnh. Nhưng bạn có biết rằng nó không phải chỉ là lượng thông tin khổng lồ được thu thập bởi máy tính, điện thoại thông minh và thẻ tín dụng?</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><strong>30 Giây Khoa học dữ liệu</strong><span>&nbsp;</span>bao gồm các nguyên tắc thống kê cơ bản thúc đẩy các thuật toán và cách thức dữ liệu ảnh hưởng đến chúng ta trong mọi lĩnh vực khoa học, xã hội, kinh doanh, giải trí - cùng với các vấn đề đạo đức và lời hứa về một thế giới tốt đẹp hơn trong tương lai. Mỗi đoạn văn 30 giây trình bày chi tiết một khía cạnh của khoa học dữ liệu chỉ trong khoảng 300 từ và một hình minh họa, miêu tả làm thế nào để thu thập các loại dữ liệu khác nhau và sử dụng các chương trình máy tính để tìm ra các qui luật mà mắt người không thể phát hiện ra, góp phần làm thay đổi thế giới. Tìm hiểu những ý tưởng và tiểu sử của những vĩ nhân đằng sau chúng, 30 giây Khoa học dữ liệu là cách nhanh nhất để khám phá cách dữ liệu ảnh hưởng mạnh mẽ đến các vấn đề lớn như biến đổi khí hậu, chăm sóc sức khỏe và cả những chi tiết nhỏ trong cuộc sống hàng ngày của chúng ta.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><strong><em>Liberty Vittert</em></strong><span>&nbsp;</span>là Giáo sư Khoa học Dữ liệu tại Trường Olin Business thuộc Đại học Washington, St Louis. Với tư cách là đại sứ của Hiệp hội Thống kê Hoàng gia, nữ chuyên gia của BBC và là thành viên được bầu chọn của Viện Thống kê Quốc tế, Liberty làm việc hết mình để phổ cập Khoa học thống kê và dữ liệu đến cho công chúng. Cô cũng là Phó biên tập cho Tạp chí Harvard Data Science<span>&nbsp;</span><span style=\"font-size: 1em;\">Review và là thành viên Hoa Kì trong Hội đồng quản trị của Tổ chức Người tị nạn Liên hợp quốc (UNHCR).</span></p><div><br><!--EndFragment--><br><br></div><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><span>​</span></p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1734449246505-30-giay-khoa-hoc_khoa-hoc-du-lieu.png",
+    "slide": [
+      "http://localhost:3100/uploads\\1734449159057-2023_07_31_17_09_19_1-390x510.webp",
+      "http://localhost:3100/uploads\\1734449159058-30-giay-khoa-hoc_khoa-hoc-du-lieu.png",
+      "http://localhost:3100/uploads\\1734449159051-2023_07_31_17_09_19_3-390x510.webp",
+      "http://localhost:3100/uploads\\1734449159055-2023_07_31_17_09_19_2-390x510.webp"
+    ],
+    "category": {
+      "$oid": "65fd67c2207e1639f49dc012"
+    },
+    "author": {
+      "$oid": "67619905f0aa99d180b5eaa7"
+    },
+    "pulisher": {
+      "$oid": "6712805ffcdda7ce5a28f87b"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-12-17T15:27:26.568Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-17T15:30:41.587Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67619a3ef0aa99d180b5eac2"
+    },
+    "name": "Khoa Học Về Giấc Ngủ",
+    "price": 300000,
+    "salePrice": 240000,
+    "year": 2024,
+    "stock": 50,
+    "pages": 224,
+    "weight": 500,
+    "size": "22 x 17 x 1.1",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><strong>Khoa Học Về Giấc Ngủ</strong></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Các chuyên gia trong nhiều lĩnh vực cảnh báo chúng ta rằng thiếu ngủ, hoặc ngủ không đúng giấc, sẽ mang đến một loạt hệ quả thảm khốc.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Thông điệp của Heather Darwall-Smith trong cuốn sách này rất đơn giản: đừng hoảng loạn!</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Con người được lập trình sinh học để ngủ được, và Heather khuyến khích chúng ta tìm ra những thay đổi có thể thực hiện trong lối sống để khiến đồng hồ sinh học hoạt động đúng nhịp, giúp chúng ta dễ dàng chìm vào giấc ngủ.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Khoa học về giấc ngủ mang đến câu trả lời chuyên sâu cho các câu hỏi về những khó khăn liên quan đến giấc ngủ và phơi bày những ngộ nhận và xu hướng nhất thời về giấc ngủ bằng cách tiếp cận từ góc độ khoa học thường thức mà ai cũng có thể hiểu được như: Thiếu ngủ có ảnh hưởng đến sự phát triển của trẻ nhỏ không? Tại sao đứa con tuổi vị thành niên của tôi thi thoảng lại ngủ gật ban ngày? Càng già thì ta càng khó ngủ phải không? Tại sao tôi nghiến răng, mộng du, nói, bị bóng đè… trong khi ngủ? Chăn ga gối đệm, quần áo ngủ, âm nhạc và không gian xung quanh nói chung có giúp cải thiện giấc ngủ của tôi không?...</p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1734449726278-8935235240957.jpg",
+    "slide": [
+      "http://localhost:3100/uploads\\1734449693816-8935235240957 (1).jpg",
+      "http://localhost:3100/uploads\\1734449693818-2024_05_31_16_48_33_3-390x510.webp"
+    ],
+    "category": {
+      "$oid": "65fd67c2207e1639f49dc012"
+    },
+    "author": {
+      "$oid": "6713eedb681bb48074434f34"
+    },
+    "pulisher": {
+      "$oid": "6713ede7681bb48074434efa"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-12-17T15:35:26.343Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-17T15:35:26.343Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67619a3ef0aa99d180b5eac2"
+    },
+    "name": "Khoa Học Về Giấc Ngủ",
+    "price": 300000,
+    "salePrice": 240000,
+    "year": 2024,
+    "stock": 50,
+    "pages": 224,
+    "weight": 500,
+    "size": "22 x 17 x 1.1",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><strong>Khoa Học Về Giấc Ngủ</strong></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Các chuyên gia trong nhiều lĩnh vực cảnh báo chúng ta rằng thiếu ngủ, hoặc ngủ không đúng giấc, sẽ mang đến một loạt hệ quả thảm khốc.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Thông điệp của Heather Darwall-Smith trong cuốn sách này rất đơn giản: đừng hoảng loạn!</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Con người được lập trình sinh học để ngủ được, và Heather khuyến khích chúng ta tìm ra những thay đổi có thể thực hiện trong lối sống để khiến đồng hồ sinh học hoạt động đúng nhịp, giúp chúng ta dễ dàng chìm vào giấc ngủ.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Khoa học về giấc ngủ mang đến câu trả lời chuyên sâu cho các câu hỏi về những khó khăn liên quan đến giấc ngủ và phơi bày những ngộ nhận và xu hướng nhất thời về giấc ngủ bằng cách tiếp cận từ góc độ khoa học thường thức mà ai cũng có thể hiểu được như: Thiếu ngủ có ảnh hưởng đến sự phát triển của trẻ nhỏ không? Tại sao đứa con tuổi vị thành niên của tôi thi thoảng lại ngủ gật ban ngày? Càng già thì ta càng khó ngủ phải không? Tại sao tôi nghiến răng, mộng du, nói, bị bóng đè… trong khi ngủ? Chăn ga gối đệm, quần áo ngủ, âm nhạc và không gian xung quanh nói chung có giúp cải thiện giấc ngủ của tôi không?...</p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1734449726278-8935235240957.jpg",
+    "slide": [
+      "http://localhost:3100/uploads\\1734449693816-8935235240957 (1).jpg",
+      "http://localhost:3100/uploads\\1734449693818-2024_05_31_16_48_33_3-390x510.webp"
+    ],
+    "category": {
+      "$oid": "65fd67c2207e1639f49dc012"
+    },
+    "author": {
+      "$oid": "6713eedb681bb48074434f34"
+    },
+    "pulisher": {
+      "$oid": "6713ede7681bb48074434efa"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-12-17T15:35:26.343Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-17T15:35:26.343Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67619b53f0aa99d180b5eb27"
+    },
+    "name": "Tắt Đèn Nghe Chuyện Cõi Âm",
+    "price": 99000,
+    "salePrice": 79000,
+    "year": 2024,
+    "stock": 30,
+    "pages": 184,
+    "weight": 200,
+    "size": "19 x 13 x 0.9 cm",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><strong>Tắt Đèn Nghe Chuyện Cõi Âm</strong></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Hai mươi năm trôi qua, lớp 12A8 bất ngờ nhận được lời mời tụ họp ở một khu nghỉ dưỡng. Tại đây, họ ngồi quây quần bên nhau, háo hức chuyện trò, ôn lại những kỷ niệm thời đi học. Giữa lúc cuộc vui dang dở, khu nghỉ dưỡng bỗng mất điện. Ai đó liền thắp một ngọn đèn dầu nhập nhoạng giữa màn đêm u tối, mở đầu cho một chuỗi những câu chuyện tâm linh rùng rợn vọng về từ đáy sâu địa ngục.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Sáu câu chuyện là sáu cánh cổng dẫn đến thế giới của những vong linh ai oán, những sinh vật kỳ dị, khát máu trong truyền thuyết. Nhưng hơn thế, đằng sau chúng còn ẩn chứa vô vàn bí mật bất ngờ và khủng khiếp đang chờ nhóm bạn khám phá. Liệu rằng những câu chuyện nhỏ có giúp họ phát hiện ra mối nguy lớn hơn đang rình rập?</p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1734450003247-b_a_4_1_4_1.jpg",
+    "slide": [
+      "http://localhost:3100/uploads\\1734449943054-b_a-1-t_t-_n-nghe-chuy_n-c_i-_m.webp",
+      "http://localhost:3100/uploads\\1734449943055-b_a_4_1_4_1.jpg",
+      null,
+      null,
+      "http://localhost:3100/uploads\\1734449954804-b_a-1-t_t-_n-nghe-chuy_n-c_i-_m.webp",
+      "http://localhost:3100/uploads\\1734449954803-b_a_4_1_4_1.jpg",
+      null,
+      null,
+      "http://localhost:3100/uploads\\1734449963122-b_a-1-t_t-_n-nghe-chuy_n-c_i-_m.webp",
+      "http://localhost:3100/uploads\\1734449963121-b_a_4_1_4_1.jpg"
+    ],
+    "category": {
+      "$oid": "6703f4d332fa2cf3d1a97bbf"
+    },
+    "author": {
+      "$oid": "6713e627681bb48074434dd1"
+    },
+    "pulisher": {
+      "$oid": "67619b6cf0aa99d180b5eb33"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-12-17T15:40:03.340Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-17T15:41:18.851Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67619cbaf0aa99d180b5eb5d"
+    },
+    "name": "Khi Địa Ngục Trống Rỗng",
+    "price": 110000,
+    "salePrice": 87000,
+    "year": 2024,
+    "stock": 30,
+    "pages": 256,
+    "weight": 270,
+    "size": "20.5 x 14.5 x 1.2 cm",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><strong>Khi Địa Ngục Trống Rỗng</strong></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><em>Khi địa ngục trống rỗng, ma quỷ loạn cõi trần.</em></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Địa ngục vốn được coi là chốn u minh, rùng rợn, nơi giam giữ biết bao linh hồn tội lỗi và thống khổ. Nhưng nếu ma quỷ thực sự chỉ hoành hành cõi âm, liệu con người có biết đến cái ác, có bị bao oán linh và quỷ dữ quấy rầy?</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Thế gian không có “quỷ đội lốt người”, cũng chẳng có oan hồn quỷ dữ nào tồn tại như người ta vẫn thường kể. Sự tồn tại đáng sợ nhất của tạo hóa chính là lòng người.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">“Khi Địa Ngục Trống Rỗng” là tuyển tập truyện ngắn kinh dị, tâm linh đến từ ngòi bút đa dạng của nhiều tác giả khác nhau. 7 câu chuyện khắc họa những con quỷ, những vong hồn uất hận cùng những cái chết rùng rợn khác nhau, nhưng tất cả đều hướng tới chung một mục đích: đào sâu vào góc khuất tăm tối nhất trong tâm hồn con người.</p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1734450362527-b_a-1-khi-_a-ng_c-tr_ng-r_ng.webp",
+    "slide": [
+      "http://localhost:3100/uploads\\1734450315644-b_a-1-khi-_a-ng_c-tr_ng-r_ng.webp",
+      "http://localhost:3100/uploads\\1734450315644-mockup-tr_ng-1_8.webp"
+    ],
+    "category": {
+      "$oid": "6703f4d332fa2cf3d1a97bbf"
+    },
+    "author": {
+      "$oid": "6713e627681bb48074434dd1"
+    },
+    "pulisher": {
+      "$oid": "67619b6cf0aa99d180b5eb33"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-12-17T15:46:02.602Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-17T15:46:02.602Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67619dbff0aa99d180b5eba7"
+    },
+    "name": "Nhà Chinh Phục Tí Hon - 10 Mục Tiêu Sống Xanh",
+    "price": 70000,
+    "salePrice": 63000,
+    "year": 2024,
+    "stock": 50,
+    "pages": 52,
+    "weight": 210,
+    "size": "26.5 x 21 x 0.2 cm",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><strong>Nhà Chinh Phục Tí Hon - 10 Mục Tiêu Sống Xanh</strong></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">CÙNG CHINH PHỤC 10 MỤC TIÊU CHUNG TAY BẢO VỆ TRÁI ĐẤT!</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Mở sách ra để khám phá bí quyết:</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">- Ăn xanh.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">- Đi phương tiện xanh.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">- Giảm tiêu thụ nhựa.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">- Tiết kiệm năng lượng.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Hãy chiến đấu và chiến thắng 10 MỤC TIÊU SỐNG XANH!</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">---</p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1734450623657-nha-chinh-phuc-ti-hon_10-muc-tieu-song-xanh.webp",
+    "slide": [
+      "http://localhost:3100/uploads\\1734450588728-nha-chinh-phuc-ti-hon_10-muc-tieu-song-xanh.webp",
+      "http://localhost:3100/uploads\\1734450588726-2024_06_18_16_56_33_3-390x510.webp",
+      "http://localhost:3100/uploads\\1734450588728-2024_06_18_16_56_33_1-390x510.webp",
+      "http://localhost:3100/uploads\\1734450588727-2024_06_18_16_56_33_2-390x510.webp"
+    ],
+    "category": {
+      "$oid": "65fd6755207e1639f49dbfe4"
+    },
+    "author": {
+      "$oid": "6713ea73681bb48074434e5b"
+    },
+    "pulisher": {
+      "$oid": "6712805ffcdda7ce5a28f87b"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-12-17T15:50:23.707Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-17T15:50:23.707Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67619f75f0aa99d180b5ec1f"
+    },
+    "name": "Đội Quân Doraemon",
+    "price": 22000,
+    "salePrice": 20000,
+    "year": 2023,
+    "stock": 80,
+    "pages": 192,
+    "weight": 140,
+    "size": "17.6 x 11.3 x 1 cm",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><strong>Đội Quân Doraemon</strong></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Tập truyện là cuộc phiêu lưu đầy thử thách, thú vị của Doremon, Nobita và các bạn. Qua mỗi câu chuyện, người đọc đều cảm thấy trách nhiệm của những nhân vật nhỏ tuổi với trái đất, với môi trường, với thiên nhiên, với việc bảo tồn động vật. Xuyên suốt các tập truyện là sợi chỉ đỏ: Cái thiện sẽ thắng cái ác, sự cố gắng sẽ được đền đáp xứng đáng.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Cuốn sách sẽ đưa chúng ta bước vào thế giới hồn nhiên, trong sáng đầy ắp tiếng cười với một kho bảo bối kì diệu - những bảo bối biến ước mơ của chúng ta thành sự thật. Nhưng trên tất cả Doraemon là hiện thân của tình bạn cao đẹp, của niềm khát khao vươn tới những tầm cao.</p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1734451061260-6_dd3d7fcef1984274b9c73607c94700.webp",
+    "slide": [],
+    "category": {
+      "$oid": "65fd6822207e1639f49dc01a"
+    },
+    "author": {
+      "$oid": "6713ea73681bb48074434e5b"
+    },
+    "pulisher": {
+      "$oid": "6712805ffcdda7ce5a28f87b"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-12-17T15:57:41.294Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-17T15:57:41.294Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "67619f75f0aa99d180b5ec1f"
+    },
+    "name": "Đội Quân Doraemon",
+    "price": 22000,
+    "salePrice": 20000,
+    "year": 2023,
+    "stock": 80,
+    "pages": 192,
+    "weight": 140,
+    "size": "17.6 x 11.3 x 1 cm",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\"><strong>Đội Quân Doraemon</strong></p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Tập truyện là cuộc phiêu lưu đầy thử thách, thú vị của Doremon, Nobita và các bạn. Qua mỗi câu chuyện, người đọc đều cảm thấy trách nhiệm của những nhân vật nhỏ tuổi với trái đất, với môi trường, với thiên nhiên, với việc bảo tồn động vật. Xuyên suốt các tập truyện là sợi chỉ đỏ: Cái thiện sẽ thắng cái ác, sự cố gắng sẽ được đền đáp xứng đáng.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Cuốn sách sẽ đưa chúng ta bước vào thế giới hồn nhiên, trong sáng đầy ắp tiếng cười với một kho bảo bối kì diệu - những bảo bối biến ước mơ của chúng ta thành sự thật. Nhưng trên tất cả Doraemon là hiện thân của tình bạn cao đẹp, của niềm khát khao vươn tới những tầm cao.</p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1734451061260-6_dd3d7fcef1984274b9c73607c94700.webp",
+    "slide": [],
+    "category": {
+      "$oid": "65fd6822207e1639f49dc01a"
+    },
+    "author": {
+      "$oid": "6713ea73681bb48074434e5b"
+    },
+    "pulisher": {
+      "$oid": "6712805ffcdda7ce5a28f87b"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-12-17T15:57:41.294Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-17T15:57:41.294Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "6761a0cff0aa99d180b5ec6c"
+    },
+    "name": "Rèn Luyện Kỹ Năng Sống Cho Học Sinh - Bồi Dưỡng Cho Trẻ 49 Kỹ Năng Sống Thực Tế (2022)",
+    "price": 65000,
+    "salePrice": 50000,
+    "year": 2022,
+    "stock": 250,
+    "pages": 112,
+    "weight": 250,
+    "size": "26 x 19 cm",
+    "form": "Bìa mềm",
+    "description": "<p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">- Bồi dưỡng trẻ vui đọc, sống vui, sống khỏe</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">- 49 phương pháp sống thực tế.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">- Các hình ảnh giới thiệu các bước đơn giản, dễ hiểu.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">- Sau mỗi bài viết có những lời nhắc nhở.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em;color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">- Học tập không giới hạn, phát triển toàn diện.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Bồi dưỡng năng lực toàn diện</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Năng lực sống phải được tiến hành bồi dưỡng và giáo dục một cách có ý thức, cùng trẻ học tập, hỗ trợ qua lại để trẻ có khả năng lo liệu cho bản thân, xây dựng tinh thần lạc quan, kiên cường, tự tin và tự lập.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">49 phương pháp sống thực tế</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;-webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Bắt đầu từ cuộc sống cơ bản, học tập các vấn đề thường gặp phải trong cuộc sống và dùng phương thức thuyết minh đơn giản để rèn luyện những thói quen chính xác.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Hình thuyết minh các bước, xem tranh nâng cao trí tuệ</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Dùng những câu thuyết minh đơn giản cùng với những hình vẽ thị phạm động tác, giúp trẻ hiểu được các thường thức trong cuộc sống, bồi dưỡng trẻ thành những người giỏi nhất.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Những lời nhắc nhở để bố mẹ cùng trẻ trưởng thành</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial;text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Mỗi kiến thức cần phải học đều kèm theo một số lời nhắc nhở, để bố mẹ cùng với trẻ trải qua quá trình học tập, thu được những phương pháp chính xác.</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Nâng cao năng lực toàn diện</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; font-size: 1em; color: rgb(33, 33, 33); font-family: &quot;Nunito Sans&quot;; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: justify;\">Coi trọng các lĩnh vực học tập toàn diện, bồi dưỡng phẩm chất đạo đức, trí tuệ, khả năng sáng tạo vô hạn.</p><div><br></div>",
+    "image": "http://localhost:3100/uploads\\1734451496370-8936067606836.webp",
+    "slide": [
+      "http://localhost:3100/uploads\\1734451370183-2023_03_25_12_48_02_1-390x510.webp",
+      "http://localhost:3100/uploads\\1734451370183-8936067606836.webp",
+      "http://localhost:3100/uploads\\1734451370180-2023_03_25_12_48_02_2-390x510.webp"
+    ],
+    "category": {
+      "$oid": "65fd6755207e1639f49dbfe4"
+    },
+    "author": {
+      "$oid": "6713edca681bb48074434ef2"
+    },
+    "pulisher": {
+      "$oid": "6713e675681bb48074434df0"
+    },
+    "status": "Available",
+    "createdAt": {
+      "$date": "2024-12-17T16:03:27.513Z"
+    },
+    "updatedAt": {
+      "$date": "2024-12-17T16:04:56.430Z"
+    },
+    "__v": 0
+  }
+]

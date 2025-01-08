@@ -1,0 +1,91 @@
+/* Chi tiết đơn hàng */
+.order-details {
+  margin-top: 20px;
+}
+
+.order-details h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Bảng thông tin */
+.order-info table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fafafa;
+}
+
+.order-info th,
+.order-info td {
+  padding: 12px 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.order-info th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  text-align: left;
+}
+
+.order-info td {
+  color: #555;
+}
+
+/* Sản phẩm đơn hàng */
+.order-products {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.product-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.product-stock,
+.product-price {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  margin-bottom: 20px;
+}
+
+.breadcrumb span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Loading Spinner */
+.ant-spin-spinning {
+  display: block;
+  margin: 20px auto;
+}

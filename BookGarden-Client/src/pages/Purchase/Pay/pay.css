@@ -1,0 +1,29 @@
+.custom-radio-group {
+  display: flex;
+  gap: 16px;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.custom-radio:hover {
+  border-color: #40a9ff;
+  background-color: #f0f8ff;
+}
+
+.custom-radio.ant-radio-wrapper-checked {
+  border-color: #1890ff;
+  background-color: #e6f7ff;
+}
+
+.custom-label {
+  margin-left: 8px;
+  font-weight: 500;
+}

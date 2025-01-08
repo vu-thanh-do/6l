@@ -1,0 +1,11 @@
+.groupButton {
+  display: flex;
+  flex-direction: column;
+}
+.btn-hover:hover {
+  background-color: grey;
+  text: grey;
+}
+button:hover {
+  background-color: grey;
+}
