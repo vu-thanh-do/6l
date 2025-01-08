@@ -54,30 +54,27 @@ app.use("/api/news", newsRoute);
 app.use("/api", voucherRoute);
 app.use("/api/vnpay", vnpayRoute);
 app.use("/uploads", express.static("uploads"));
-app.get('/api/set-time',async(req,res)=>{
+app.get("/api/set-time", async (req, res) => {
   try {
-    const data = req.query.time
-    await setting.deleteMany()
+    const data = req.query.time;
+    await setting.deleteMany();
     await setting.create({
-      time : data
-    })
-    return res.json("ok")
+      time: data,
+    });
+    return res.json("ok");
   } catch (error) {
     console.log(error);
   }
-})
-app.get('/api/get-time',async(req,res)=>{
+});
+app.get("/api/get-time", async (req, res) => {
   try {
-    
-  
-    const data = await setting.find({
-    })
-    
-    return res.json(data[0])
+    const data = await setting.find({});
+
+    return res.json(data[0]);
   } catch (error) {
     console.log(error);
   }
-})
+});
 // sendEmailNotification();
 app.get("/api/complaint/:id", async (req, res) => {
   try {
@@ -113,19 +110,19 @@ const checkTimeRemoveDiscount = async () => {
     console.log(createDate, "createDate");
     console.log(timeLimit, "timeLimit");
     console.log(currentDate, "currentDate");
-    const timeDiff = Math.floor((currentDate - createDate) / (1000 * 60 * 60 * 24));
+    const timeDiff = Math.floor(
+      (currentDate - createDate) / (1000 * 60 * 60 * 24)
+    );
 
     if (timeDiff > timeLimit) {
-      await product.updateMany(
-        {},
-        [
-          {
-            $set: {
-              salePrice: "$price",
-            },
+      console.log("first");
+      await product.updateMany({}, [
+        {
+          $set: {
+            salePrice: "$price",
           },
-        ]
-      );
+        },
+      ]);
     } else {
       console.log("Còn hạn");
     }
@@ -133,8 +130,9 @@ const checkTimeRemoveDiscount = async () => {
     console.error("Lỗi:", error);
   }
 };
-
-checkTimeRemoveDiscount()
+setInterval(() => {
+  checkTimeRemoveDiscount();
+}, 5000);
 app.get("/api/complaint", async (req, res) => {
   try {
     const complaint = await complaintModel
@@ -224,7 +222,7 @@ app.get("/api/update-complaint/:id", async (req, res) => {
     <p style="font-size: 16px; text-align: center; margin-bottom: 30px;">Xin chào <strong>${
       data.user.username || "Khách hàng"
     }</strong>, trạng thái khiếu nại của bạn đã được cập nhật. Dưới đây là chi tiết:</p>
-    
+
     <table style="width: 100%; border-collapse: collapse; margin: 20px 0; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
       <thead>
         <tr style="background-color: #20c997; color: #fff; text-align: left;">
