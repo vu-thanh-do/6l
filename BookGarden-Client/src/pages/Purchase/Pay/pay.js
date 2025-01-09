@@ -33,7 +33,7 @@ const Pay = () => {
   const [orderTotal, setOrderTotal] = useState([]);
   const [visible, setVisible] = useState(false);
   const [valueVouche, setValueVouche] = useState({
-    value :0
+    value: 0,
   });
 
   const location = useLocation();
@@ -431,7 +431,11 @@ const Pay = () => {
       const shippingFee = await fetchShippingFee();
 
       // Tính tổng tiền (bao gồm phí ship)
-      const totalAmount = Number(orderTotalPrice) + Number(shippingFee);
+      // const totalAmount = Number(orderTotalPrice) + Number(shippingFee);
+      const totalAmount =
+        valueVouche == "freeShip"
+          ? Number(orderTotalPrice) + Number(shippingFee)
+          : Number(orderTotalPrice);
 
       if (values.billing === "paypal") {
         // Lưu thông tin vào localStorage
@@ -472,7 +476,7 @@ const Pay = () => {
       throw error;
     }
   };
-  const cartLength = localStorage.getItem("cartLength")
+  const cartLength = localStorage.getItem("cartLength");
   const handleModalConfirm = async () => {
     setLoading(true);
     try {
@@ -1014,7 +1018,11 @@ const Pay = () => {
                   <p className="font-bold text-black text-xl">
                     {valueVouche?.value == "freeShip"
                       ? orderTotalPrice?.toLocaleString()
-                      : (orderTotalPrice + totalFee - valueVouche?.value)?.toLocaleString()}{" "}
+                      : (
+                          orderTotalPrice +
+                          totalFee -
+                          valueVouche?.value
+                        )?.toLocaleString()}{" "}
                     VND
                   </p>
                   <Form.Item
@@ -1032,14 +1040,20 @@ const Pay = () => {
                       onChange={(value) => {
                         console.log(value, "opkoko");
                         setValueVouche({
-                          value: typeof value ==  'number'  ? value : "freeShip",
+                          value: typeof value == "number" ? value : "freeShip",
                         });
                       }}
                       style={{ width: "100%" }}
                       placeholder="Loại voucher"
                     >
                       {product?.map((itc, index) => (
-                        <Option disabled={itc.type == 'freeShip' && Number(cartLength) < 2} key={itc._id} value={itc.value}>
+                        <Option
+                          disabled={
+                            itc.type == "freeShip" && Number(cartLength) < 2
+                          }
+                          key={itc._id}
+                          value={itc.value}
+                        >
                           {itc?.name}
                         </Option>
                       ))}

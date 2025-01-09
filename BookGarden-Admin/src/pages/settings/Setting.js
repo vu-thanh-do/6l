@@ -19,10 +19,7 @@ const Setting = () => {
       <p>day current : {dt}</p>
       <input placeholder="enter day " onChange={(e)=>setValue(e.target.value)} />
       <button onClick={async()=>{
-        if(value <=0){
-            alert("Số ngày phải lớn hơn 0")
-            return
-        } 
+       
         const data = await fetch("http://localhost:3100/api/set-time?time=" + value);
         setTimeout(()=>{
             window.location.reload()

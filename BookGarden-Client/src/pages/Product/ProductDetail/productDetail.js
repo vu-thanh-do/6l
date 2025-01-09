@@ -532,14 +532,24 @@ const ProductDetail = () => {
                           {item.name}
                         </Paragraph>
                         <div className="price-amount">
-                          <Paragraph className="price-product">
-                            {numberWithCommas(item.price - item.salePrice)} đ
-                          </Paragraph>
-                          {item.salePrice !== 0 && (
-                            <Paragraph className="price-cross">
-                              {numberWithCommas(item.price)} đ
-                            </Paragraph>
-                          )}
+                          <React.Fragment>
+                            {item?.salePrice === item?.price ? (
+                              <Paragraph className="price-product">
+                                {numberWithCommas(item.salePrice)} đ
+                              </Paragraph>
+                            ) : (
+                              <React.Fragment>
+                                <Paragraph className="price-product">
+                                  {item?.salePrice &&
+                                    numberWithCommas(item.salePrice)}{" "}
+                                  đ
+                                </Paragraph>
+                                <Paragraph className="price-cross">
+                                  {item.price && numberWithCommas(item.price)} đ
+                                </Paragraph>
+                              </React.Fragment>
+                            )}
+                          </React.Fragment>
                         </div>
                       </div>
                     </div>
