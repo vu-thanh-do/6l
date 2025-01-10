@@ -193,7 +193,7 @@ const Pay = () => {
   useEffect(() => {
     restoreFormAndProductData();
   }, [form]);
-
+  const currentDate = new Date();
   // Thêm hàm xóa dữ liệu localStorage khi đơn hàng hoàn tất
   const clearPayFormLocalStorage = () => {
     // Xóa thông tin form
@@ -1046,17 +1046,35 @@ const Pay = () => {
                       style={{ width: "100%" }}
                       placeholder="Loại voucher"
                     >
-                      {product?.map((itc, index) => (
-                        <Option
-                          disabled={
-                            itc.type == "freeShip" && Number(cartLength) < 2
-                          }
-                          key={itc._id}
-                          value={itc.value}
-                        >
-                          {itc?.name}
-                        </Option>
-                      ))}
+                      {product
+                        ?.filter((iac) => iac.status == "active")
+                        ?.map((itc, index) => {
+                          const endDate = new Date(itc.endDate);
+                          console.log(endDate, "endDate");
+                          console.log(currentDate, "currentDate");
+                          return (
+                            <Option
+                              disabled={
+                                // currentDate
+                                // itc.type == "freeShip" && Number(cartLength) < 2
+                                Number(orderTotalPrice) < Number(itc.require)
+                              }
+                              key={itc._id}
+                              value={itc.value}
+                            >
+                              {itc?.name}{" "}
+                              <span
+                                style={{
+                                  fontWeight: "bold",
+                                  paddingLeft: "10px",
+                                }}
+                              >
+                                Điều kiện sử dụng đơn hàng lớn hơn{" "}
+                                {Number(itc.require)?.toLocaleString()}
+                              </span>
+                            </Option>
+                          );
+                        })}
                     </Select>
                   </Form.Item>
                   <Form.Item

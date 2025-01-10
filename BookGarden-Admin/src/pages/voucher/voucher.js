@@ -28,6 +28,7 @@ import {
   Upload,
   message,
   notification,
+  DatePicker,
 } from "antd";
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
@@ -36,6 +37,7 @@ import "suneditor/dist/css/suneditor.min.css";
 import axiosClient from "../../apis/axiosClient";
 import productApi from "../../apis/productsApi";
 import "./productList.css";
+import moment, * as moments from "moment";
 const { confirm } = Modal;
 const { Option } = Select;
 const { Title } = Typography;
@@ -79,6 +81,9 @@ const VoucherList = () => {
         name: values.name,
         value: values.value,
         type: values.type,
+        require: values.require,
+        startDate: values.startDate,
+        endDate: values.endDate,
       };
       return axiosClient
         .post("/voucher/create", categoryList)
@@ -132,33 +137,35 @@ const VoucherList = () => {
   const handleUpdateProduct = async (values) => {
     setLoading(true);
     try {
+      // Nếu image không tồn tại, chỉ gọi API put
+      const categoryList = {
+        name: values.name,
+        value: values.value,
+        type: values.type,
+        require: values.require,
+        startDate: values.startDate,
+        endDate: values.endDate,
+      };
 
-        // Nếu image không tồn tại, chỉ gọi API put
-        const categoryList = {
-          name: values.name,
-          value: values.value,
-          type: values.type,
-        };
-
-        return axiosClient
-          .put("/voucher/edit/" + id, categoryList)
-          .then((response) => {
-            if (response === undefined) {
-              notification["error"]({
-                message: `Thông báo`,
-                description: "Chỉnh sửa thất bại",
-              });
-              setLoading(false);
-            } else {
-              notification["success"]({
-                message: `Thông báo`,
-                description: "Chỉnh sửa thành công",
-              });
-              setOpenModalUpdate(false);
-              handleProductList();
-              setLoading(false);
-            }
-          });
+      return axiosClient
+        .put("/voucher/edit/" + id, categoryList)
+        .then((response) => {
+          if (response === undefined) {
+            notification["error"]({
+              message: `Thông báo`,
+              description: "Chỉnh sửa thất bại",
+            });
+            setLoading(false);
+          } else {
+            notification["success"]({
+              message: `Thông báo`,
+              description: "Chỉnh sửa thành công",
+            });
+            setOpenModalUpdate(false);
+            handleProductList();
+            setLoading(false);
+          }
+        });
     } catch (error) {
       throw error;
     }
@@ -226,6 +233,9 @@ const VoucherList = () => {
           name: response.name,
           value: response.value,
           type: response.type,
+          require: response.require,
+          startDate: moment(response.startDate),
+          endDate: moment(response.endDate),
         });
         setLoading(false);
       } catch (error) {
@@ -267,10 +277,39 @@ const VoucherList = () => {
       render: (text) => <a>{text}</a>,
     },
     {
-      title: "Giá trị",
-      dataIndex: "value",
-      key: "value",
-      render: (text) => <a>{text}</a>,
+      title: "Điều kiện",
+      dataIndex: "require",
+      key: "require",
+      render: (text) => (
+        <a>đơn hàng lớn hơn: {Number(text)?.toLocaleString()} VND</a>
+      ),
+    },
+    {
+      title: "ngày bắt đầu",
+      dataIndex: "startDate",
+      key: "startDate",
+      render: (text) => <a>{text?.split("T")[0]}</a>,
+    },
+    {
+      title: "Ngày kết thúc",
+      dataIndex: "endDate",
+      key: "endDate",
+      render: (text) => <a>{text?.split("T")[0]}</a>,
+    },
+    {
+      title: "Trạng thái",
+      dataIndex: "status",
+      key: "status",
+      render: (text) => (
+        <a
+          style={{
+            color: text == "active" ? "green" : "red",
+            fontWeight: "bold",
+          }}
+        >
+          {text}
+        </a>
+      ),
     },
     {
       title: "Action",
@@ -330,9 +369,17 @@ const VoucherList = () => {
 
   const handleSubmit = () => {
     form.validateFields().then((values) => {
-      console.log(values, "ok values");
+      const startDateNew = moment(values.startDate).format("MM-DD-YYYY");
+      console.log(startDateNew, "values.startDate");
+      const formattedValues = {
+        ...values,
+        startDate: values.startDate
+          ? values.startDate.format("YYYY-MM-DD")
+          : null,
+        endDate: values.endDate ? values.endDate.format("YYYY-MM-DD") : null,
+      };
       form.resetFields();
-      handleOkUser(values);
+      handleOkUser(formattedValues);
       setVisible(false);
     });
   };
@@ -461,6 +508,28 @@ const VoucherList = () => {
                 </Form.Item>
               )}
               <Form.Item
+                name="require"
+                label="Điều kiện sử dụng"
+                style={{ marginBottom: 10 }}
+              >
+                <Input placeholder="Điều kiện sử dụng > VND" />
+              </Form.Item>
+              <Form.Item
+                name="startDate"
+                label="Ngày bắt đầu"
+                style={{ marginBottom: 10 }}
+              >
+                <DatePicker />
+              </Form.Item>
+              <Form.Item
+                name="endDate"
+                label="Ngày kết thúc"
+                style={{ marginBottom: 10 }}
+              >
+                <DatePicker />
+              </Form.Item>
+
+              <Form.Item
                 name="type"
                 label="Loại voucher"
                 rules={[
@@ -472,7 +541,6 @@ const VoucherList = () => {
                 style={{ marginBottom: 10 }}
               >
                 <Select
-               
                   onChange={(value) => {
                     console.log(value);
                     setCheckType(value?.trim());
@@ -504,8 +572,19 @@ const VoucherList = () => {
                   form2
                     .validateFields()
                     .then((values) => {
+                      console.log(values, "values"); // Kiểm tra dữ liệu đầu ra từ form
+                      const formattedValues = {
+                        ...values,
+                        startDate: values.startDate
+                          ? values.startDate.format("YYYY-MM-DD")
+                          : null,
+                        endDate: values.endDate
+                          ? values.endDate.format("YYYY-MM-DD")
+                          : null,
+                      };
+                      console.log(formattedValues, "formattedValues"); // Kiểm tra dữ liệu sau định dạng
                       form2.resetFields();
-                      handleUpdateProduct(values);
+                      handleUpdateProduct(formattedValues);
                     })
                     .catch((info) => {
                       console.log("Validate Failed:", info);
@@ -556,6 +635,33 @@ const VoucherList = () => {
               </>
             )}
             <Form.Item
+              name="require"
+              label="Điều kiện sử dụng"
+              style={{ marginBottom: 10 }}
+            >
+              <Input placeholder="Điều kiện sử dụng > VND" />
+            </Form.Item>
+            <Form.Item
+              name="startDate"
+              label="Ngày bắt đầu"
+              rules={[
+                { required: true, message: "Vui lòng chọn ngày bắt đầu!" },
+              ]}
+              style={{ marginBottom: 10 }}
+            >
+              <DatePicker />
+            </Form.Item>
+            <Form.Item
+              name="endDate"
+              label="Ngày kết thúc"
+              rules={[
+                { required: true, message: "Vui lòng chọn ngày kết thúc!" },
+              ]}
+              style={{ marginBottom: 10 }}
+            >
+              <DatePicker />
+            </Form.Item>
+            <Form.Item
               name="type"
               label="Loại voucher"
               rules={[
@@ -567,7 +673,6 @@ const VoucherList = () => {
               style={{ marginBottom: 10 }}
             >
               <Select style={{ width: "100%" }} placeholder="Loại voucher">
-            
                 <Option value={"cash"}>cash</Option>
                 <Option value={"freeShip"}>freeShip</Option>
               </Select>

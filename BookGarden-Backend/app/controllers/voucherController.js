@@ -4,12 +4,24 @@ const voucherContainer = {
   getAllVoucher: async (req, res) => {
     const page = req.body.page || 1;
     const limit = req.body.limit || 10;
-
     const options = {
       page: page,
       limit: limit,
     };
-
+    const today = new Date();
+    const listVoucher = await vouche.find({});
+    for (const a of listVoucher) {
+      const startDate = new Date(a.startDate);
+      const endDate = new Date(a.endDate);
+      if (today < startDate) {
+        a.status = "inactive"; 
+      } else if (today > endDate) {
+        a.status = "inactive"; 
+      } else {
+        a.status = "active"; 
+      }
+      await a.save();
+    }
     try {
       const categories = await vouche.paginate({}, options);
       res.status(200).json({ data: categories });
@@ -32,6 +44,9 @@ const voucherContainer = {
       name: req.body.name,
       type: req.body.type,
       value: req.body.value,
+      startDate: req.body.startDate,
+      endDate: req.body.endDate,
+      require: req.body.require,
     });
 
     try {
@@ -55,11 +70,11 @@ const voucherContainer = {
   },
 
   updateVoucher: async (req, res) => {
-    const { name ,value ,type } = req.body;
+    const { name, value, type, startDate, endDate, require } = req.body;
     try {
       const updatedCategory = await vouche.findByIdAndUpdate(
         req.params.id,
-        { name ,value ,type},
+        { name, value, type, startDate, endDate, require },
         { new: true }
       );
       if (!updatedCategory) {
@@ -67,7 +82,9 @@ const voucherContainer = {
       }
       res.status(200).json({ data: updatedCategory });
     } catch (err) {
-      res.status(500).json(err);
+      res.status(500).json({
+        message: err.message,
+      });
     }
   },
 };

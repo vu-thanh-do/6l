@@ -5,11 +5,17 @@ const voucherSchema = new mongoose.Schema(
   {
     name: String,
     type: String,
-    value : Number
+    value: Number,
+    startDate: Date,
+    endDate: Date,
+    require: String,
+    status: {
+      default: "active",
+      type: String,
+    },
   },
   { timestamps: true },
   { collection: "Voucher" }
 );
 voucherSchema.plugin(mongoosePaginate);
-
 module.exports = mongoose.model("Voucher", voucherSchema);
