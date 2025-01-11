@@ -91,6 +91,27 @@ app.get("/api/complaint/:id", async (req, res) => {
     res.status(500).json({ message: "Lỗi khi lấy dữ liệu khiếu nại" });
   }
 });
+const updateVoucherTimes = async () => {
+  try {
+    const settings = await setting.find({ time: { $gt: 0 } });
+    for (let setting of settings) {
+      const now = new Date();
+      const createDate = setting.createdAt;
+      const diffInTime = now - createDate;
+      const diffInDays = Math.floor(diffInTime / (1000 * 3600 * 24));
+      let newTime = setting.time - diffInDays;
+      if (newTime <= 0) {
+        newTime = -1;
+      }
+      setting.time = newTime;
+      await setting.save();
+    }
+
+    console.log("Đã cập nhật tất cả các bản ghi.");
+  } catch (error) {
+    console.error("Lỗi khi cập nhật: ", error);
+  }
+};
 const checkTimeRemoveDiscount = async () => {
   try {
     const timeDate = await setting.find({});
@@ -132,6 +153,7 @@ const checkTimeRemoveDiscount = async () => {
 };
 setInterval(() => {
   checkTimeRemoveDiscount();
+  updateVoucherTimes()
 }, 5000);
 app.get("/api/complaint", async (req, res) => {
   try {

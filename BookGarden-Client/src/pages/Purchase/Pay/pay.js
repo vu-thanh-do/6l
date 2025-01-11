@@ -247,7 +247,11 @@ const Pay = () => {
 
     // Tính toán tổng tiền (bao gồm phí ship)
     const totalAmount =
-      valueVouche == "freeShip" ? orderTotalPrice + totalFee : orderTotalPrice;
+      valueVouche?.value == "freeShip"
+        ? orderTotalPrice
+        : Number(orderTotalPrice) - Number(valueVouche.value || 0) + totalFee;
+    console.log(totalAmount, "totalAmount");
+    console.log(valueVouche, "valueVouche");
     const orderData = {
       userId: userData._id,
       address: values.address,
@@ -433,9 +437,9 @@ const Pay = () => {
       // Tính tổng tiền (bao gồm phí ship)
       // const totalAmount = Number(orderTotalPrice) + Number(shippingFee);
       const totalAmount =
-        valueVouche == "freeShip"
-          ? Number(orderTotalPrice) + Number(shippingFee)
-          : Number(orderTotalPrice);
+        valueVouche?.value == "freeShip"
+          ? orderTotalPrice
+          : Number(orderTotalPrice) - Number(valueVouche.value || 0) + totalFee;
 
       if (values.billing === "paypal") {
         // Lưu thông tin vào localStorage
