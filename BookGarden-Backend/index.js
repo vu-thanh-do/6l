@@ -20,6 +20,9 @@ const statisticalRoute = require("./app/routers/statistical");
 const paymentRoute = require("./app/routers/paypal");
 const newsRoute = require("./app/routers/news");
 const voucherRoute = require("./app/routers/voucher");
+const bookLoanStatsRoute = require("./app/routers/bookLoanStatistics");
+const bookLoanRoute = require("./app/routers/bookLoan");
+const reviewRoute = require("./app/routers/review");
 
 const complaintModel = require("./app/models/complaintModel");
 const order = require("./app/models/order");
@@ -52,6 +55,9 @@ app.use("/api/order", orderRoute);
 app.use("/api/payment", paymentRoute);
 app.use("/api/news", newsRoute);
 app.use("/api", voucherRoute);
+app.use("/api/book-loan-stats", bookLoanStatsRoute);
+app.use("/api/book-loan", bookLoanRoute);
+app.use("/api/review", reviewRoute);
 app.use("/api/vnpay", vnpayRoute);
 app.use("/uploads", express.static("uploads"));
 app.get("/api/set-time", async (req, res) => {
@@ -151,10 +157,7 @@ const checkTimeRemoveDiscount = async () => {
     console.error("Lỗi:", error);
   }
 };
-setInterval(() => {
-  checkTimeRemoveDiscount();
-  updateVoucherTimes()
-}, 5000);
+
 app.get("/api/complaint", async (req, res) => {
   try {
     const complaint = await complaintModel
