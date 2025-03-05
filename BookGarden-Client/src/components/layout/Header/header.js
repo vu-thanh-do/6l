@@ -13,6 +13,9 @@ import {
   Modal,
   Drawer,
   Select,
+  Space,
+  Button,
+  Menu,
 } from "antd";
 import {
   BellOutlined,
@@ -20,11 +23,11 @@ import {
   BarsOutlined,
   ShoppingCartOutlined,
   UserOutlined,
+  BookOutlined,
 } from "@ant-design/icons";
 import axiosClient from "../../../apis/axiosClient";
 
 const { Option } = Select;
-
 const { Header } = Layout;
 
 function Topbar() {
@@ -36,7 +39,8 @@ function Topbar() {
   const [contentNotification, setContentNotification] = useState("");
   const [visibleDrawer, setVisibleDrawer] = useState(false);
   const [userData, setUserData] = useState([]);
-  const [cart, setCart] = useState(0); // Khởi tạo cart là số lượng sản phẩm trong giỏ
+  const [cart, setCart] = useState(0);
+  const [borrowCart, setBorrowCart] = useState(0);
 
   const history = useHistory();
 
@@ -90,129 +94,137 @@ function Topbar() {
   };
 
   useEffect(() => {
-    // Lấy dữ liệu người dùng và giỏ hàng từ localStorage
     (async () => {
       try {
         const local = localStorage.getItem("user");
         const user = JSON.parse(local);
         setUserData(user);
 
-        // Lấy giỏ hàng từ localStorage và tính toán số lượng sản phẩm trong giỏ
-        const cart = JSON.parse(localStorage.getItem("cart")) || [];
-        setCart(cart.length); // Cập nhật lại số lượng giỏ hàng
+        // Lấy số lượng giỏ hàng
+        const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+        setCart(cartItems.length);
+
+        // Lấy số lượng giỏ mượn
+        const borrowItems = JSON.parse(localStorage.getItem("borrowItems")) || [];
+        setBorrowCart(borrowItems.length);
       } catch (error) {
         console.log("Failed to fetch profile user:" + error);
       }
     })();
   }, []);
 
+  // Menu cho mobile
+  const mobileMenu = (
+    <Menu>
+      <Menu.Item key="home" onClick={() => handleLink("/home")}>
+        Trang chủ
+      </Menu.Item>
+      <Menu.Item key="products" onClick={() => handleLink("/product-list")}>
+        Sản phẩm
+      </Menu.Item>
+      <Menu.Item key="news" onClick={() => handleLink("/news")}>
+        Tin tức
+      </Menu.Item>
+      <Menu.Item key="contact" onClick={() => handleLink("/contact")}>
+        Liên hệ
+      </Menu.Item>
+      <Menu.Item key="cart" onClick={() => handleLink("/cart")}>
+        Giỏ hàng ({cart})
+      </Menu.Item>
+      <Menu.Item key="borrow" onClick={() => handleLink("/borrow-cart")}>
+        Giỏ mượn ({borrowCart})
+      </Menu.Item>
+    </Menu>
+  );
+
   return (
-    <Header style={{ background: "green" }} className={styles.header}>
-      <div className="">
+    <Header className={styles.header}>
+      {/* Logo */}
+      <div className={styles.logo}>
         <img
-          style={{
-            color: "#000000",
-            fontSize: 15,
-            width: 200,
-            cursor: "pointer",
-          }}
           src="/logo.png"
+          alt="Logo"
           onClick={() => handleLink("/home")}
-        ></img>
+          style={{ width: 100, cursor: "pointer" }}
+        />
       </div>
-      <BarsOutlined className={styles.bars} onClick={showDrawer} />
-      <div className={styles.navmenu} style={{ marginLeft: 20 }}>
-        <NavLink className={styles.navlink} to="/home" activeStyle>
+
+      {/* Menu cho mobile */}
+      <div className={styles.mobileMenu}>
+        <Button type="text" icon={<BarsOutlined />} onClick={() => setVisibleDrawer(true)} />
+        <Drawer
+          title="Menu"
+          placement="right"
+          onClose={() => setVisibleDrawer(false)}
+          visible={visibleDrawer}
+        >
+          {mobileMenu}
+        </Drawer>
+      </div>
+
+      {/* Menu chính */}
+      <nav className={styles.navMenu}>
+        <NavLink className={styles.navLink} to="/home">
           Trang chủ
         </NavLink>
-        <NavLink className={styles.navlink} to="/product-list" activeStyle>
+        <NavLink className={styles.navLink} to="/product-list">
           Sản phẩm
         </NavLink>
-
-        <NavLink className={styles.navlink} to="/news" activeStyle>
+        <NavLink className={styles.navLink} to="/news">
           Tin tức
         </NavLink>
-        <NavLink className={styles.navlink} to="/contact" activeStyle>
+        <NavLink className={styles.navLink} to="/contact">
           Liên hệ
         </NavLink>
+      </nav>
+
+      {/* Thanh tìm kiếm */}
+      <div className={styles.searchBar}>
         <Select
           showSearch
-          style={{ marginLeft: 20, width: 300 }}
           placeholder="Bạn tìm gì..."
           optionFilterProp="children"
           filterOption={(input, option) =>
             (option?.label?.toLowerCase() ?? "").includes(input.toLowerCase())
           }
-          filterSort={(optionA, optionB) =>
-            optionA?.label
-              ?.toLowerCase()
-              .localeCompare(optionB?.label?.toLowerCase())
-          }
-          options={selectOptions}
           onChange={handleSelectChange}
           onSearch={handleSearch}
+          options={selectOptions}
+          className={styles.searchSelect}
         />
       </div>
-      <div className={styles.logBtn}>
-        <div
-          style={{
-            position: "relative",
-            display: "flex",
-            float: "right",
-            alignItems: "center",
-            cursor: "pointer",
-          }}
-        >
-          <Row>
-            <Col onClick={() => handleLink("/cart")}>
-              <p
-                style={{
-                  marginRight: 10,
-                  padding: 30,
-                  margin: 0,
-                  fontSize: "14px",
-                  color: "#FFFFFF",
-                }}
-              >
-                Giỏ hàng{" "}
-                <ShoppingCartOutlined
-                  style={{ fontSize: "32px", color: "#FFFFFF" }}
-                />
-                {cart} {/* Hiển thị số lượng giỏ hàng */}
-              </p>
-            </Col>
-            <Col>
-              <Badge
-                style={{ marginLeft: 10 }}
-                overflowCount={9999}
-                count={userData?.score > 0 ? userData?.score : 0}
-              />
-            </Col>
-          </Row>
 
-          <Row>
-            <DropdownAvatar key="avatar" />
-            <p
-              style={{
-                marginRight: 10,
-                padding: 0,
-                margin: 0,
-                color: "#FFFFFF",
-              }}
-            >
-              <UserOutlined style={{ fontSize: "28px", color: "#FFFFFF" }} />
-            </p>
-          </Row>
-          <Modal
-            title={titleNotification}
-            visible={visible}
-            onOk={handleOk}
-            onCancel={handleOk}
-            cancelButtonProps={{ style: { display: "none" } }}
+      {/* Các nút bên phải */}
+      <div className={styles.rightButtons}>
+        {/* Giỏ hàng */}
+        <Badge count={cart} className={styles.cartBadge}>
+          <Button
+            type="text"
+            icon={<ShoppingCartOutlined />}
+            onClick={() => handleLink("/cart")}
+            className={styles.cartButton}
           >
-            <p dangerouslySetInnerHTML={{ __html: contentNotification }}></p>
-          </Modal>
-        </div>
+            <span className={styles.buttonText}>Giỏ hàng</span>
+          </Button>
+        </Badge>
+
+        {/* Giỏ mượn */}
+        <Badge count={borrowCart} className={styles.borrowBadge}>
+          <Button
+            type="text"
+            icon={<BookOutlined />}
+            onClick={() => handleLink("/borrow-cart")}
+            className={styles.borrowButton}
+          >
+            <span className={styles.buttonText}>Giỏ mượn</span>
+          </Button>
+        </Badge>
+
+        {/* Avatar và điểm */}
+        <Space className={styles.userInfo}>
+          <Badge count={userData?.score > 0 ? userData?.score : 0} />
+          <DropdownAvatar />
+        </Space>
       </div>
     </Header>
   );

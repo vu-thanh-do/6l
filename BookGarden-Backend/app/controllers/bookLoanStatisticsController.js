@@ -1,118 +1,102 @@
 const BookLoan = require("../models/bookLoan");
 const Product = require("../models/product");
+const moment = require("moment");
 
 const bookLoanStatisticsController = {
-  // Thống kê số lượng sách mượn/trả theo tháng, năm
+  // Lấy thống kê mượn/trả theo tháng
   getLoanReturnStats: async (req, res) => {
     try {
       const { year, month } = req.query;
-      let matchQuery = {};
-      
-      // Nếu có year và month thì lọc theo tháng/năm cụ thể
-      if (year && month) {
-        const startDate = new Date(year, month - 1, 1);
-        const endDate = new Date(year, month, 0);
-        matchQuery = {
-          borrowDate: {
-            $gte: startDate,
-            $lte: endDate
-          }
+      const matchQuery = {};
+
+      if (year) {
+        matchQuery.createdAt = {
+          $gte: moment().year(parseInt(year)).startOf("year").toDate(),
+          $lte: moment().year(parseInt(year)).endOf("year").toDate(),
         };
       }
-      // Nếu chỉ có year thì lọc theo năm
-      else if (year) {
-        const startDate = new Date(year, 0, 1);
-        const endDate = new Date(year, 11, 31);
-        matchQuery = {
-          borrowDate: {
-            $gte: startDate,
-            $lte: endDate
-          }
+
+      if (month) {
+        matchQuery.createdAt = {
+          $gte: moment().year(parseInt(year)).month(parseInt(month) - 1).startOf("month").toDate(),
+          $lte: moment().year(parseInt(year)).month(parseInt(month) - 1).endOf("month").toDate(),
         };
       }
 
       const stats = await BookLoan.aggregate([
+        { $match: matchQuery },
         {
-          $match: matchQuery
+          $project: {
+            month: { $month: "$createdAt" },
+            year: { $year: "$createdAt" },
+            status: 1,
+            books: 1,
+            totalBorrowFee: 1,
+            depositFee: 1,
+            shippingFee: 1,
+            totalAmount: 1
+          }
         },
         {
           $group: {
             _id: {
-              year: { $year: "$borrowDate" },
-              month: { $month: "$borrowDate" }
+              month: "$month",
+              year: "$year",
+              status: "$status"
             },
-            totalBorrowed: { $sum: 1 },
-            totalReturned: {
-              $sum: {
-                $cond: [{ $eq: ["$status", "returned"] }, 1, 0]
-              }
-            },
-            totalOverdue: {
-              $sum: {
-                $cond: [{ $eq: ["$status", "overdue"] }, 1, 0]
-              }
-            }
+            count: { $sum: 1 },
+            totalRevenue: { $sum: "$totalAmount" }
           }
         },
         {
-          $sort: {
-            "_id.year": 1,
-            "_id.month": 1
+          $project: {
+            _id: 0,
+            month: "$_id.month",
+            year: "$_id.year",
+            status: "$_id.status",
+            count: 1,
+            totalRevenue: 1
           }
         }
       ]);
 
+      // Format dữ liệu cho biểu đồ
+      const formattedStats = stats.map(stat => ({
+        month: `Tháng ${stat.month}/${stat.year}`,
+        type: stat.status === "returned" ? "Trả" : 
+              stat.status === "overdue" ? "Quá hạn" : "Mượn",
+        value: stat.count,
+        revenue: stat.totalRevenue
+      }));
+
       res.status(200).json({
         success: true,
-        data: stats
+        data: formattedStats
       });
     } catch (error) {
       res.status(500).json({
         success: false,
-        message: "Lỗi khi lấy thống kê mượn/trả sách",
+        message: "Lỗi khi lấy thống kê mượn/trả",
         error: error.message
       });
     }
   },
 
-  // Thống kê top sách được mượn nhiều nhất
+  // Lấy thống kê sách mượn nhiều nhất
   getMostBorrowedBooks: async (req, res) => {
     try {
-      const { limit = 10 } = req.query;
-
       const stats = await BookLoan.aggregate([
+        { $unwind: "$books" },
         {
           $group: {
-            _id: "$book",
-            totalBorrows: { $sum: 1 }
+            _id: "$books.id",
+            bookName: { $first: "$books.name" },
+            totalBorrows: { $sum: 1 },
+            totalRevenue: { $sum: "$books.borrowFee" }
           }
         },
-        {
-          $sort: { totalBorrows: -1 }
-        },
-        {
-          $limit: parseInt(limit)
-        },
-        {
-          $lookup: {
-            from: "products",
-            localField: "_id",
-            foreignField: "_id",
-            as: "bookDetails"
-          }
-        },
-        {
-          $unwind: "$bookDetails"
-        },
-        {
-          $project: {
-            _id: 1,
-            totalBorrows: 1,
-            bookName: "$bookDetails.name",
-            author: "$bookDetails.author",
-            category: "$bookDetails.category"
-          }
-        }
+        { $sort: { totalBorrows: -1 } },
+        { $limit: 10 }
       ]);
 
       res.status(200).json({
@@ -128,17 +112,24 @@ const bookLoanStatisticsController = {
     }
   },
 
-  // Thống kê tổng quan
+  // Lấy thống kê tổng quan
   getOverallStats: async (req, res) => {
     try {
-      const totalLoans = await BookLoan.countDocuments();
-      const totalReturned = await BookLoan.countDocuments({ status: "returned" });
-      const totalOverdue = await BookLoan.countDocuments({ status: "overdue" });
-      const totalPending = await BookLoan.countDocuments({ status: "pending" });
-      
-      // Tính tỷ lệ trả sách đúng hạn
-      const returnRate = totalReturned > 0 ? 
-        ((totalReturned / (totalReturned + totalOverdue)) * 100).toFixed(2) : 0;
+      const stats = await BookLoan.aggregate([
+        {
+          $group: {
+            _id: "$status",
+            count: { $sum: 1 },
+            totalRevenue: { $sum: "$totalAmount" }
+          }
+        }
+      ]);
+
+      const totalLoans = stats.reduce((sum, stat) => sum + stat.count, 0);
+      const totalReturned = stats.find(stat => stat._id === "returned")?.count || 0;
+      const totalOverdue = stats.find(stat => stat._id === "overdue")?.count || 0;
+      const totalPending = stats.find(stat => stat._id === "pending")?.count || 0;
+      const totalRevenue = stats.reduce((sum, stat) => sum + stat.totalRevenue, 0);
 
       res.status(200).json({
         success: true,
@@ -147,7 +138,8 @@ const bookLoanStatisticsController = {
           totalReturned,
           totalOverdue,
           totalPending,
-          returnRate
+          returnRate: totalLoans > 0 ? Math.round((totalReturned / totalLoans) * 100) : 0,
+          totalRevenue
         }
       });
     } catch (error) {

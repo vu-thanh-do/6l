@@ -28,7 +28,7 @@ const Cart = () => {
   const [cartTotal, setCartTotal] = useState(0);
   const history = useHistory();
   const [selectedProducts, setSelectedProducts] = useState([]);
-  const handlePay = () => {
+  const handlePay = (type) => {
     if (selectedProducts.length === 0) {
       message.error("Vui lòng chọn ít nhất một sản phẩm để thanh toán.");
       return;
@@ -42,7 +42,7 @@ const Cart = () => {
     // Chuyển hướng đến trang thanh toán với danh sách sản phẩm đã chọn
     history.push({
       pathname: "/pay",
-      state: { selectedProducts: selectedCartItems }, // Gửi danh sách sản phẩm đã chọn
+      state: { selectedProducts: selectedCartItems, type: type }, // Gửi danh sách sản phẩm đã chọn
     });
   };
 
@@ -389,10 +389,20 @@ const Cart = () => {
                           <Button
                             style={{ marginTop: 16 }}
                             type="primary"
-                            onClick={handlePay}
+                            onClick={() => handlePay('buynow')}
+                            disabled={selectedProducts.length === 0}
+                            className="mr-4"
+                          >
+                            Thanh toán mua ngay
+                            <CreditCardOutlined style={{ fontSize: "20px" }} />
+                          </Button>
+                          <Button
+                            style={{ marginTop: 16 }}
+                            type="primary"
+                            onClick={() => handlePay('rent')}
                             disabled={selectedProducts.length === 0}
                           >
-                            Thanh toán ngay
+                            Thuê sách
                             <CreditCardOutlined style={{ fontSize: "20px" }} />
                           </Button>
                         </Col>

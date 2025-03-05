@@ -59,109 +59,148 @@
 }
 
 .header {
-  height: 80px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  z-index: 10;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.navmenu {
+  background: #1e6f5c;
+  padding: 0 20px;
   display: flex;
   align-items: center;
-  width: 100vw;
-  white-space: nowrap;
-}
-
-.navmenu2 {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-}
-
-.navlink {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
-  cursor: pointer;
-  position: relative;
-}
-
-.navlink2 {
-  color: black;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid black;
-}
-
-.navlink2 span {
-  color: black;
-}
-
-.navlink:hover {
-  color: #fff;
-}
-
-.navlink:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0px;
-  content: "";
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #ffffff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-  margin-bottom: 12px;
-}
-
-.navlink:hover:after {
+  justify-content: space-between;
+  position: fixed;
   width: 100%;
-  left: 0;
+  z-index: 1000;
+  height: 64px;
 }
 
-.bars {
-  display: none;
+/* Logo */
+.logo {
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Menu chính */
+.navMenu {
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 
-.logBtn {
+/* Thanh tìm kiếm */
+.searchBar {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 20px;
+}
+
+.searchSelect {
+  width: 100%;
+}
+
+/* Các nút bên phải */
+.rightButtons {
   display: flex;
   align-items: center;
-  margin-right: 24px;
-  justify-content: flex-end;
-  width: 100vw;
+  gap: 16px;
+}
+
+.cartButton,
+.borrowButton {
+  color: white !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cartButton:hover,
+.borrowButton:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.buttonText {
+  margin-left: 8px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Menu mobile */
+.mobileMenu {
+  display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .buttonText {
+    display: none;
+  }
+  
+  .searchBar {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navMenu {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  .searchBar {
+    max-width: 250px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .navmenu {
-    display: none;
+  .header {
+    padding: 0 12px;
   }
 
-  .bars {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
+  .logo img {
+    height: 32px;
   }
 
-  .logBtn {
-    display: none;
+  .searchBar {
+    max-width: 200px;
+    margin: 0 12px;
+  }
+
+  .rightButtons {
+    gap: 8px;
   }
 }
 
-/*dropdownMenu*/
+@media screen and (max-width: 576px) {
+  .searchBar {
+    display: none;
+  }
 
-.loginSpan {
-  cursor: pointer;
-  font-size: 16;
-  color: white;
+  .rightButtons {
+    gap: 4px;
+  }
+
+  .cartBadge,
+  .borrowBadge {
+    transform: scale(0.9);
+  }
 }

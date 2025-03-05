@@ -22,6 +22,9 @@ import ProductList from "../pages/Product/ProductList/productList";
 import News from "../pages/News/news";
 import ResetPassword from "../pages/ResetPassword/resetPassword";
 import Complaint from "../pages/Complaint/complaint";
+import BorrowCart from "../pages/Borrow/BorrowCart/borrowCart";
+import BorrowConfirm from "../pages/Borrow/BorrowConfirm/borrowConfirm";
+import MyLoans from "../pages/Borrow/MyLoans/myLoans";
 
 const RouterURL = ({ location }) => {
   const PrivateContainer = () => (
@@ -51,11 +54,20 @@ const RouterURL = ({ location }) => {
             <PrivateRoute exact path="/product-list">
               <ProductList />
             </PrivateRoute>
-            <PrivateRoute exact path="/:id">
-              <ProductList />
-            </PrivateRoute>
             <PrivateRoute exact path="/complaint/:id">
               <Complaint />
+            </PrivateRoute>
+            <PrivateRoute exact path="/borrow-cart">
+              <BorrowCart />
+            </PrivateRoute>
+            <PrivateRoute exact path="/borrow-confirm">
+              <BorrowConfirm />
+            </PrivateRoute>
+            <PrivateRoute exact path="/my-loans">
+              <MyLoans />
+            </PrivateRoute>
+            <PrivateRoute exact path="/:id">
+              <ProductList />
             </PrivateRoute>
           </Switch>
           <Layout>
@@ -96,10 +108,12 @@ const RouterURL = ({ location }) => {
             <Route exact path="/reset-password/:id">
               <ResetPassword />
             </Route>
+            <Route exact path="/complaint">
+              <Complaint />
+            </Route>
             <Route exact path="/complaint/:id">
               <Complaint />
             </Route>
-            {/* Thêm route cho Category */}
             <Route exact path="/:id">
               <ProductList />
             </Route>
@@ -134,6 +148,7 @@ const RouterURL = ({ location }) => {
     <div>
       <Router>
         <Switch>
+          {/* Public Routes */}
           <Route exact path="/">
             <PublicContainer />
           </Route>
@@ -146,34 +161,13 @@ const RouterURL = ({ location }) => {
           <Route exact path="/contact">
             <PublicContainer />
           </Route>
-          <Route exact path="/login">
-            <LoginContainer />
-          </Route>
-          <Route exact path="/register">
-            <LoginContainer />
-          </Route>
-          <Route exact path="/pay">
-            <PrivateContainer />
-          </Route>
-          <Route exact path="/home">
-            <PrivateContainer />
-          </Route>
-          <Route exact path="/profile">
-            <PrivateContainer />
-          </Route>
-          <Route exact path="/final-pay">
-            <PrivateContainer />
-          </Route>
-          <Route exact path="/cart-history">
-            <PrivateContainer />
-          </Route>
-          <Route exact path="/product-list">
-            <PublicContainer />
-          </Route>
           <Route exact path="/news">
             <PublicContainer />
           </Route>
           <Route exact path="/news/:id">
+            <PublicContainer />
+          </Route>
+          <Route exact path="/product-list">
             <PublicContainer />
           </Route>
           <Route exact path="/reset-password/:id">
@@ -185,9 +179,47 @@ const RouterURL = ({ location }) => {
           <Route exact path="/complaint/:id">
             <PublicContainer />
           </Route>
+
+          {/* Auth Routes */}
+          <Route exact path="/login">
+            <LoginContainer />
+          </Route>
+          <Route exact path="/register">
+            <LoginContainer />
+          </Route>
+
+          {/* Private Routes */}
+          <Route exact path="/home">
+            <PrivateContainer />
+          </Route>
+          <Route exact path="/profile">
+            <PrivateContainer />
+          </Route>
+          <Route exact path="/pay">
+            <PrivateContainer />
+          </Route>
+          <Route exact path="/final-pay">
+            <PrivateContainer />
+          </Route>
+          <Route exact path="/cart-history">
+            <PrivateContainer />
+          </Route>
+          <Route exact path="/borrow-cart">
+            <PrivateContainer />
+          </Route>
+          <Route exact path="/borrow-confirm">
+            <PrivateContainer />
+          </Route>
+          <Route exact path="/my-loans">
+            <PrivateContainer />
+          </Route>
+
+          {/* Wildcard Route - Phải đặt cuối cùng */}
           <Route exact path="/:id">
             <PublicContainer />
           </Route>
+
+          {/* Not Found Route */}
           <Route>
             <NotFound />
           </Route>

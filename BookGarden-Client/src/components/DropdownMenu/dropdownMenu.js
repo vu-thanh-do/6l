@@ -60,6 +60,15 @@ function DropdownAvatar() {
           Trang cá nhân
         </a>
       </Menu.Item>
+      <Menu.Item icon={<UserOutlined />}>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => handleRouter("/my-loans")}
+        >
+          Quản lý mượn sách
+        </a>
+      </Menu.Item>
       <Menu.Item icon={<ShoppingCartOutlined />}>
         <a
           target="_blank"

@@ -8,26 +8,83 @@ const bookLoanSchema = new mongoose.Schema(
       ref: "User", 
       required: true 
     },
-    book: { 
-      type: mongoose.Schema.Types.ObjectId, 
-      ref: "Product", 
-      required: true 
+    books: [{ 
+      id: {
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: "Product", 
+        required: true
+      },
+      name: {
+        type: String,
+        required: true
+      },
+      category: {
+        type: String,
+        required: true
+      },
+      image: {
+        type: String,
+        required: true
+      },
+      price: {
+        type: Number,
+        required: true
+      },
+      borrowDays: {
+        type: Number,
+        required: true
+      },
+      borrowFee: {
+        type: Number,
+        required: true
+      },
+      dueDate: {
+        type: Date,
+        required: true
+      }
+    }],
+    totalBooks: {
+      type: Number,
+      required: true
+    },
+    totalBorrowFee: {
+      type: Number,
+      required: true
+    },
+    depositFee: {
+      type: Number,
+      required: true
+    },
+    deliveryMethod: {
+      type: String,
+      enum: ["pickup", "shipping"],
+      required: true
+    },
+    shippingAddress: {
+      province: String,
+      district: String,
+      ward: String,
+      address: String,
+      note: String
+    },
+    shippingFee: {
+      type: Number,
+      default: 0
+    },
+    totalAmount: {
+      type: Number,
+      required: true
     },
     borrowDate: {
       type: Date,
-      required: true,
       default: Date.now
-    },
-    dueDate: {
-      type: Date,
-      required: true
     },
     returnDate: {
       type: Date
     },
     status: {
       type: String,
-      enum: ["pending", "borrowed", "returned", "overdue", "extended"],
+      enum: ["pending", "borrowed", "returned", "overdue", "extended", "cancelled"],
       default: "pending"
     },
     extensionCount: {

@@ -1,47 +1,44 @@
 const router = require("express").Router();
 const bookLoanController = require("../controllers/bookLoanController");
 const verifyToken = require("../../utils/middleware");
+const bookLoanStatisticsController = require("../controllers/bookLoanStatisticsController");
 
 // Đăng ký mượn sách
 router.post(
-  "/borrow",
-  verifyToken.checkLogin,
+  "/borrow/:id",
   bookLoanController.borrowBook
 );
 
 // Lấy danh sách sách đã mượn của user
 router.get(
   "/user/:userId",
-  verifyToken.checkLogin,
   bookLoanController.getUserLoans
 );
 
 // Gia hạn mượn sách
-router.put(
+router.post(
   "/extend/:loanId",
-  verifyToken.checkLogin,
   bookLoanController.extendLoan
 );
 
 // Trả sách
-router.put(
+router.post(
   "/return/:loanId",
-  verifyToken.checkLogin,
   bookLoanController.returnBook
 );
 
 // Lấy danh sách tất cả phiếu mượn (admin)
 router.get(
   "/all",
-  verifyToken.checkLogin,
   bookLoanController.getAllLoans
 );
 
 // Duyệt yêu cầu mượn sách (admin)
 router.put(
   "/approve/:loanId",
-  verifyToken.checkLogin,
   bookLoanController.approveLoan
 );
-
+router.get("/stats/loan-return", bookLoanStatisticsController.getLoanReturnStats);
+router.get("/stats/most-borrowed", bookLoanStatisticsController.getMostBorrowedBooks);
+router.get("/stats/overall", bookLoanStatisticsController.getOverallStats);
 module.exports = router; 

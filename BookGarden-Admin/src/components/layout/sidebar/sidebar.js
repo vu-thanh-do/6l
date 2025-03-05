@@ -13,6 +13,7 @@ import {
   UnorderedListOutlined,
   FolderOutlined,
   ExclamationCircleOutlined,
+  BarChartOutlined,
 } from "@ant-design/icons";
 
 const { SubMenu } = Menu;
@@ -41,14 +42,24 @@ function Sidebar() {
       link: "/product-list",
       icon: <FormOutlined />,
     },
-
     {
       key: "order-list",
       title: "Quản lý đơn hàng",
       link: "/order-list",
       icon: <ShoppingCartOutlined />,
     },
-
+    {
+      key: "book-loan-list",
+      title: "Quản lý mượn sách",
+      link: "/book-loans",
+      icon: <ShoppingCartOutlined />,
+    },
+    {
+      key: "book-loan-statistics",
+      title: "Thống kê mượn sách",
+      link: "/statistics",
+      icon: <BarChartOutlined />,
+    },
     {
       key: "complaint-list",
       title: "Quản lý khiếu nại",

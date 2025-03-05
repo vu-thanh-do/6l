@@ -8,8 +8,14 @@ import {
   Row,
   Spin,
   message,
+  Button,
 } from "antd";
-import { PlayCircleOutlined, PauseCircleOutlined } from "@ant-design/icons";
+import {
+  PlayCircleOutlined,
+  PauseCircleOutlined,
+  ShoppingCartOutlined,
+  BookOutlined,
+} from "@ant-design/icons";
 import Paragraph from "antd/lib/typography/Paragraph";
 import React, { useEffect, useState, useRef } from "react";
 import { useHistory, useParams } from "react-router-dom";
@@ -33,6 +39,8 @@ const ProductDetail = () => {
   const [comment, setComment] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
   const addCart = (product) => {
     if (product.stock === 0) {
       message.warning("Sản phẩm đã hết hàng");
@@ -204,10 +212,49 @@ const ProductDetail = () => {
     handleList();
     window.scrollTo(0, 0);
   }, [cartLength]);
+
   const handleImageClick = (image) => {
     setCurrentImage(image);
     setIsOpen(true); // Mở modal khi ảnh được nhấp vào
   };
+
+  const handleBorrowBook = () => {
+    // Kiểm tra đăng nhập
+   
+
+    // Lấy danh sách sách đã chọn từ localStorage
+    const borrowItems = JSON.parse(localStorage.getItem("borrowItems") || "[]");
+
+    // Kiểm tra số lượng sách đã mượn
+    if (borrowItems.length >= 3) {
+      message.error("Bạn chỉ được mượn tối đa 3 cuốn sách");
+      return;
+    }
+
+    // Kiểm tra sách đã có trong giỏ mượn chưa
+    const isExist = borrowItems.some((item) => item.id === productDetail._id);
+    if (isExist) {
+      message.warning("Sách này đã có trong giỏ mượn");
+      return;
+    }
+
+    // Thêm sách vào giỏ mượn
+    const newBorrowItem = {
+      id: productDetail._id,
+      name: productDetail.name,
+      author: productDetail.author?.name,
+      category: productDetail.category?.name,
+      image: productDetail.image,
+      price: productDetail.salePrice,
+    };
+
+    localStorage.setItem(
+      "borrowItems",
+      JSON.stringify([...borrowItems, newBorrowItem])
+    );
+    message.success("Đã thêm sách vào giỏ mượn");
+  };
+
   return (
     <div>
       <Spin spinning={false}>
@@ -479,6 +526,22 @@ const ProductDetail = () => {
                     >
                       Thêm vào giỏ
                     </button>
+                    <div className="product-actions">
+                      {/* Nút mượn sách */}
+                      <Button
+                        type="default"
+                        icon={<BookOutlined />}
+                        onClick={handleBorrowBook}
+                        disabled={
+                          productDetail?.status === "Unavailable" ||
+                          productDetail?.status === "Discontinued"
+                        }
+                        style={{ marginLeft: "10px" }}
+                        
+                      >
+                        Mượn sách
+                      </Button>
+                    </div>
                   </div>
                 </Card>
               </Col>

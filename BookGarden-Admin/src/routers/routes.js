@@ -109,6 +109,27 @@ const OrderDetail = lazy(() => {
   ]).then(([moduleExports]) => moduleExports);
 });
 
+const BookLoanList = lazy(() => {
+  return Promise.all([
+    import("../pages/BookLoan/BookLoanList"),
+    new Promise((resolve) => setTimeout(resolve, 0)),
+  ]).then(([moduleExports]) => moduleExports);
+});
+
+const BookLoanDetail = lazy(() => {
+  return Promise.all([
+    import("../pages/BookLoan/BookLoanDetail"),
+    new Promise((resolve) => setTimeout(resolve, 0)),
+  ]).then(([moduleExports]) => moduleExports);
+});
+
+const BookLoanStatistics = lazy(() => {
+  return Promise.all([
+    import("../pages/BookLoan/BookLoanStatistics"),
+    new Promise((resolve) => setTimeout(resolve, 0)),
+  ]).then(([moduleExports]) => moduleExports);
+});
+
 const RouterURL = withRouter(({ location }) => {
   const LoginContainer = () => (
     <div>
@@ -227,6 +248,24 @@ const RouterURL = withRouter(({ location }) => {
                 <OrderDetail />
               </Suspense>
             </PrivateRoute>
+
+            <PrivateRoute exact path="/book-loans">
+              <Suspense fallback={<LoadingScreen />}>
+                <BookLoanList />
+              </Suspense>
+            </PrivateRoute>
+
+            <PrivateRoute exact path="/book-loans/:id">
+              <Suspense fallback={<LoadingScreen />}>
+                <BookLoanDetail />
+              </Suspense>
+            </PrivateRoute>
+
+            <PrivateRoute exact path="/statistics">
+              <Suspense fallback={<LoadingScreen />}>
+                <BookLoanStatistics />
+              </Suspense>
+            </PrivateRoute>
           </Content>
           <Footer />
         </Layout>
@@ -292,7 +331,15 @@ const RouterURL = withRouter(({ location }) => {
           <Route exact path="/order-details/:id">
             <DefaultContainer />
           </Route>
-
+          <Route exact path="/book-loans">
+            <DefaultContainer />
+          </Route>
+          <Route exact path="/book-loans/:id">
+            <DefaultContainer />
+          </Route>
+          <Route exact path="/statistics">
+            <DefaultContainer />
+          </Route>
           <Route>
             <NotFound />
           </Route>
