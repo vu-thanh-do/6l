@@ -1,0 +1,247 @@
+[{
+  "_id": {
+    "$oid": "67c7ce5d2426b06b27df1e90"
+  },
+  "user": {
+    "$oid": "671f6a8f84cb7a0ffbdf0fa1"
+  },
+  "books": [
+    {
+      "id": {
+        "$oid": "67619dbff0aa99d180b5eba7"
+      },
+      "name": "Nhà Chinh Phục Tí Hon - 10 Mục Tiêu Sống Xanh",
+      "category": "65fd6755207e1639f49dbfe4",
+      "image": "http://localhost:3100/uploads\\1734450623657-nha-chinh-phuc-ti-hon_10-muc-tieu-song-xanh.webp",
+      "price": 70000,
+      "borrowDays": 8,
+      "borrowFee": 24000,
+      "dueDate": {
+        "$date": "2025-03-19T17:00:00.000Z"
+      },
+      "_id": {
+        "$oid": "67c7f2993168713b0c55f429"
+      }
+    }
+  ],
+  "totalBooks": 1,
+  "totalBorrowFee": 24000,
+  "depositFee": 63000,
+  "deliveryMethod": "shipping",
+  "shippingAddress": {
+    "province": "Tỉnh Cao Bằng",
+    "district": "Huyện Bảo Lâm",
+    "ward": "Thị trấn Pác Miầu",
+    "address": "213213213",
+    "note": "423432432"
+  },
+  "shippingFee": 40000,
+  "totalAmount": 127000,
+  "status": "returned",
+  "extensionCount": 1,
+  "borrowDate": {
+    "$date": "2025-03-05T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-03-05T04:09:01.841Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T06:47:00.561Z"
+  },
+  "__v": 2,
+  "returnDate": {
+    "$date": "2025-03-05T06:47:00.544Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7c806668ac74a28cd85f5"
+  },
+  "user": {
+    "$oid": "671f6a8f84cb7a0ffbdf0fa1"
+  },
+  "books": [
+    {
+      "id": {
+        "$oid": "6761a0cff0aa99d180b5ec6c"
+      },
+      "name": "Rèn Luyện Kỹ Năng Sống Cho Học Sinh - Bồi Dưỡng Cho Trẻ 49 Kỹ Năng Sống Thực Tế (2022)",
+      "category": "65fd6755207e1639f49dbfe4",
+      "image": "http://localhost:3100/uploads\\1734451496370-8936067606836.webp",
+      "price": 65000,
+      "borrowDays": 6,
+      "borrowFee": 18000,
+      "dueDate": {
+        "$date": "2025-03-11T00:00:00.000Z"
+      },
+      "_id": {
+        "$oid": "67c7d81e8b9d069c03f341f4"
+      }
+    }
+  ],
+  "totalBooks": 1,
+  "totalBorrowFee": 18000,
+  "depositFee": 65000,
+  "deliveryMethod": "pickup",
+  "shippingFee": 0,
+  "totalAmount": 83000,
+  "status": "returned",
+  "extensionCount": 0,
+  "borrowDate": {
+    "$date": "2025-03-05T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-03-05T03:41:58.160Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T06:41:17.665Z"
+  },
+  "__v": 1,
+  "returnDate": {
+    "$date": "2025-03-05T06:41:17.628Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7c8b3c44543da746e050a"
+  },
+  "user": {
+    "$oid": "671f6a8f84cb7a0ffbdf0fa1"
+  },
+  "books": [
+    {
+      "id": {
+        "$oid": "6761a0cff0aa99d180b5ec6c"
+      },
+      "name": "Rèn Luyện Kỹ Năng Sống Cho Học Sinh - Bồi Dưỡng Cho Trẻ 49 Kỹ Năng Sống Thực Tế (2022)",
+      "category": "65fd6755207e1639f49dbfe4",
+      "image": "http://localhost:3100/uploads\\1734451496370-8936067606836.webp",
+      "price": 65000,
+      "borrowDays": 1,
+      "borrowFee": 3000,
+      "dueDate": {
+        "$date": "2025-03-06T17:00:00.000Z"
+      },
+      "_id": {
+        "$oid": "67c7f5767e514594931f8f65"
+      }
+    }
+  ],
+  "totalBooks": 1,
+  "totalBorrowFee": 3000,
+  "depositFee": 50000,
+  "deliveryMethod": "pickup",
+  "shippingFee": 0,
+  "totalAmount": 53000,
+  "status": "returned",
+  "extensionCount": 1,
+  "borrowDate": {
+    "$date": "2025-03-06T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-03-05T03:44:51.570Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T07:05:15.875Z"
+  },
+  "__v": 2,
+  "returnDate": {
+    "$date": "2025-03-05T07:05:15.867Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7c8ccc44543da746e0521"
+  },
+  "user": {
+    "$oid": "671f6a8f84cb7a0ffbdf0fa1"
+  },
+  "books": [
+    {
+      "id": {
+        "$oid": "6761985ef0aa99d180b5ea80"
+      },
+      "name": "30 Giây Khoa Học - 30 Giây Khoa Học Dữ Liệu",
+      "category": "65fd67c2207e1639f49dc012",
+      "image": "http://localhost:3100/uploads\\1734449246505-30-giay-khoa-hoc_khoa-hoc-du-lieu.png",
+      "price": 155000,
+      "borrowDays": 8,
+      "borrowFee": 24000,
+      "dueDate": {
+        "$date": "2025-03-13T00:00:00.000Z"
+      },
+      "_id": {
+        "$oid": "67c7f5707e514594931f8f58"
+      }
+    }
+  ],
+  "totalBooks": 1,
+  "totalBorrowFee": 24000,
+  "depositFee": 139500,
+  "deliveryMethod": "pickup",
+  "shippingFee": 0,
+  "totalAmount": 163500,
+  "status": "returned",
+  "extensionCount": 0,
+  "borrowDate": {
+    "$date": "2025-03-05T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-03-05T03:45:16.075Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T07:05:16.669Z"
+  },
+  "__v": 1,
+  "returnDate": {
+    "$date": "2025-03-05T07:05:16.660Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c7c9f7f9cf713d3a14e2c3"
+  },
+  "user": {
+    "$oid": "671f6a8f84cb7a0ffbdf0fa1"
+  },
+  "books": [
+    {
+      "id": {
+        "$oid": "6761985ef0aa99d180b5ea80"
+      },
+      "name": "30 Giây Khoa Học - 30 Giây Khoa Học Dữ Liệu",
+      "category": "65fd67c2207e1639f49dc012",
+      "image": "http://localhost:3100/uploads\\1734449246505-30-giay-khoa-hoc_khoa-hoc-du-lieu.png",
+      "price": 155000,
+      "borrowDays": -25,
+      "borrowFee": -75000,
+      "dueDate": {
+        "$date": "2025-03-10T17:00:00.000Z"
+      },
+      "_id": {
+        "$oid": "67c7f2a03168713b0c55f436"
+      }
+    }
+  ],
+  "totalBooks": 1,
+  "totalBorrowFee": -75000,
+  "depositFee": 139500,
+  "deliveryMethod": "pickup",
+  "shippingFee": 0,
+  "totalAmount": 64500,
+  "status": "returned",
+  "extensionCount": 1,
+  "borrowDate": {
+    "$date": "2025-03-06T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2025-03-05T03:50:15.792Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-05T06:54:30.930Z"
+  },
+  "__v": 2,
+  "returnDate": {
+    "$date": "2025-03-05T06:54:30.909Z"
+  }
+}]
