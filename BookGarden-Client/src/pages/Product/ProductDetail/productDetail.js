@@ -506,7 +506,7 @@ const ProductDetail = () => {
 
                   <div className="flex gap-4 pt-[20px] ">
                     <button
-                      className={` bg-red-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-transform duration-200 hover:bg-red-700 hover:-translate-y-1 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:shadow-none`}
+                      className={` bg-red-500 text-white font-semibold px-1 rounded-lg shadow-lg transition-transform duration-200 hover:bg-red-700 hover:-translate-y-1 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:shadow-none`}
                       onClick={() => paymentCard(productDetail)}
                       disabled={
                         productDetail?.status === "Unavailable" ||
@@ -526,12 +526,23 @@ const ProductDetail = () => {
                     >
                       Thêm vào giỏ
                     </button>
-                    <div className="product-actions">
+                         <button
+                      className={` bg-green-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-transform duration-200 hover:bg-yellow-600 hover:-translate-y-1 disabled:bg-gray-400 disabled:cursor-not-allowed disabled:shadow-none`}
+                     onClick={handleBorrowBook}
+                     disabled={
+                          productDetail?.status === "Unavailable" ||
+                          productDetail?.status === "Discontinued"
+                        }
+                    >
+                      Mượn sách
+                    </button>
+                    {/* <div className="product-actions"> */}
                       {/* Nút mượn sách */}
-                      <Button
+                      {/* <Button
                         type="default"
                         icon={<BookOutlined />}
                         onClick={handleBorrowBook}
+                        className="px-1 py-2"
                         disabled={
                           productDetail?.status === "Unavailable" ||
                           productDetail?.status === "Discontinued"
@@ -540,8 +551,8 @@ const ProductDetail = () => {
                         
                       >
                         Mượn sách
-                      </Button>
-                    </div>
+                      </Button> */}
+                    {/* </div> */}
                   </div>
                 </Card>
               </Col>
